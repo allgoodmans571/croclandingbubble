@@ -10,7 +10,7 @@ app.use('/public', express.static(__dirname + '/public'));
 
 
 app.post("/getData", function (req, res) {
-
+  results = request.body.results();
 
 });
 
