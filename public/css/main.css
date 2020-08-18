@@ -24,13 +24,10 @@ h1, h2, h3, h4, h5 {
 
 body{
   font-family: "Arial";
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -151,7 +148,7 @@ textarea {
   font-weight: 700;
 }
 
-.q1{
+.q1,.q2, .q3, .q4, .q5, .q6{
   max-width: 100%;
   height: auto;
   position: relative;
@@ -164,27 +161,82 @@ textarea {
   
 }
 
-.quest1{
+.quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
   position: absolute;
   bottom: 15%;
   left: 17%;
-  width: 40%;
+  width: 50%;
   font-size: 14px;
   font-weight: 900;
   color: #fff
 }
 
-input[type="radio"] {
-  display:none;
+.form_radio {
+	margin-bottom: 20px;
 }
-input[type="radio"] + label span {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  margin: -1px 4px 0 0;
-  vertical-align: middle;
-  background:url() left top no-repeat;
+
+.form_radio:last-child{
+  margin-bottom: 0;
+}
+
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 35px;
+	margin-right: 0;
+	line-height: 18px;
+  user-select: none;
+  background: url("../img/circle.png") 0 0 no-repeat;
+  height: 80%;
+}
+
+/* Checked */
+.form_radio input[type=radio]:checked + label {
+  height: 25px;
+}
+
+.form_radio.form_radio-r input[type=radio]:checked + label {
+  background: url("../img/checked/checked-r.png") 0 0 no-repeat;
+}
+
+.form_radio.form_radio-g input[type=radio]:checked + label {
+  background: url("../img/checked/checked-g.png") 0 0 no-repeat;
+}
+
+.form_radio.form_radio-b input[type=radio]:checked + label {
+  background: url("../img/checked/checked-b.png") 0 0 no-repeat;
+}
+ 
+.form_radio.form_radio-o input[type=radio]:checked + label {
+  background: url("../img/checked/checked-o.png") 0 0 no-repeat;
+}
+/* Hover */
+
+ 
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
+
+.btn{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  border: none;
+  padding: 10px 30px;
   cursor: pointer;
+  background-color: #475DEB;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all .2s linear;
+}
+
+.btn:hover{
+  background-color: rgb(20, 51, 119);
 }
 
 
