@@ -29,6 +29,7 @@ body{
 .container{
   max-width: 1280px;
   width: 100%;
+  margin: 0 auto;
 }
 
 /*
@@ -101,67 +102,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.intro{
-  background-color: rgb(19, 177, 19);
-  width: 100%;
-  height: 80vh;
+.intro__img{
   position: relative;
-}
-
-.intro__title{
-  font-size: 64px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  padding-top: 10px;
-}
-
-.e {
-  text-transform: lowercase;
-  font-size: 86px;
-  color: #000;
-  display: inline-block;
-  transform: rotate(180deg);
-}
-
-.Z{
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  width: 150px;
   max-width: 100%;
   height: auto;
-}
-
-.V{
-  position: absolute;
-  top: 0;
-  left: 20%;
-  width: 250px;
-  max-width: 100%;
-  height: auto;
-}
-
-.fish{
-  position: absolute;
   display: block;
-  width: 800px;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
 }
 
 .intro__text{
-  max-width: 300px;
   position: absolute;
-  bottom: 100px;
-  right: 50px;
+  max-width: 300px;
+  
+
+  right: 10%;
+  top: 40%;
 }
 
 .subtitle{
   font-size: 36px;
-  color: rgb(28, 75, 175);
+  color: #622BDC;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -175,7 +134,7 @@ textarea {
 
 .intro__btn{
   padding: 10px 0;
-  background-color: rgb(28, 75, 175);
+  background-color: #622BDC;
   text-align: center;
   cursor: pointer;
   transition: all .2s linear;
@@ -191,6 +150,43 @@ textarea {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.q1{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.main__img1{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.quest1{
+  position: absolute;
+  bottom: 15%;
+  left: 17%;
+  width: 40%;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff
+}
+
+input[type="radio"] {
+  display:none;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background:url() left top no-repeat;
+  cursor: pointer;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -365,4 +361,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
