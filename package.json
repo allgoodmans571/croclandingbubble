@@ -1,9 +1,9 @@
 {
-  "name": " ",
+  "name": "croclandingbubble",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
+  "description": "\"# croclandingbubble\"",
+  "keywords": [],
+  "license": "ISC",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
@@ -13,5 +13,14 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allgoodmans571/croclandingbubble.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allgoodmans571/croclandingbubble/issues"
+  },
+  "homepage": "https://github.com/allgoodmans571/croclandingbubble#readme"
 }
