@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/allgoodmans571/croclandingbubble/issues"
   },
-  "homepage": "https://github.com/allgoodmans571/croclandingbubble#readme"
+  "homepage": "https://github.com/allgoodmans571/croclandingbubble#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
