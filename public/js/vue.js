@@ -12,8 +12,11 @@ app1 = new Vue({
                 this.counter++
                 this.true_answer = true
                 this.false_answer = false
+   
             }
+            
         },
+        
         no(){
             if (this.false_answer == false) {
                 if (this.counter != 0) {
@@ -21,9 +24,13 @@ app1 = new Vue({
                 }
                 this.false_answer = true
                 this.true_answer = false
+
             }
-        }
-    },
+        },
+        
+    
+    },  
+      
 });
 
 app2 = new Vue({
@@ -124,6 +131,7 @@ app5 = new Vue({
                 this.counter++
                 this.true_answer = true
                 this.false_answer = false
+
             }
         },
         no(){
@@ -163,6 +171,7 @@ app6 = new Vue({
                 this.true_answer = false
             }
         }
+        
     },
 });
 
@@ -179,3 +188,4 @@ app7 = new Vue({
         }
     }
 })
+
