@@ -23,8 +23,10 @@ h1, h2, h3, h4, h5 {
 }
 
 
+
+
 body{
-  font-family: sans-serif;
+  font-family: "Russo One" sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -107,17 +109,28 @@ textarea {
    ========================================================================== */
 
 .intro{
-  background: url("../img/bg-img/intro.png") no-repeat center;
-  background-size: cover;
+  background: url("../img/bg-img/intro.png");
   height: 80vh;
   background-color: #28975F;
+  position: relative;
+}
+
+.intro__img{
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.logo{
+  padding: 2% 0 0 2%;
 }
 
 .intro__text{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
   max-width: 300px;
-  float: right;
-  margin-top: 15%;
-  margin-right: 10%;
 }
 
 .intro__title{
@@ -125,7 +138,7 @@ textarea {
   font-size: 64px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 900px;
+  font-weight: 900;
   letter-spacing: 0.5rem;
 }
 
@@ -134,6 +147,8 @@ textarea {
   font-size: 72;
   color: transparent;
 }
+
+
 
 .e{
   width: 3%;
@@ -214,7 +229,7 @@ textarea {
   }
 
   80% {
-      transform: translate(-10px, -340px) scale(1.25) rotate(360deg); 
+      transform: translate(-10px, -260px) scale(1.25) rotate(360deg); 
   }
 
   100%{
@@ -300,68 +315,60 @@ textarea {
   background-color: #ada531;
 }
 
-.q1, .q2, .q3, .q4, .q5, .q6{
+.intro, .q1, .q2, .q3, .q4, .q5, .q6{
   position: relative;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  min-height: 800px;
 }
 
 .q1{
-  background: url("../img/bg-img/bg1.png") no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
+  background: url("../img/bg-img/bg1.png") no-repeat center;
+}
+
+.wrapper{
+  margin-top: 5%;
+  margin-left: 2%;
 }
 
 .q2{
   background: url("../img/bg-img/bg2.png") no-repeat center;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
  
 }
 .q3{
   background: url("../img/bg-img/bg3.png") no-repeat center;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
 }
 .q4{
   background: url("../img/bg-img/bg4.png") no-repeat center;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
 }
-.q5{
-  background: url("../img/bg-img/bg5.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  background-blend-mode: color;
-  
-  height: 80vh;
-  
+.q5{
+  background: url("../img/bg-img/bg5.png") no-repeat center;
 }
+
 .q6{
   background: url("../img/bg-img/bg6.png") no-repeat center;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
 }
 
 
 .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
-  position: absolute;
-  bottom: 10%;
-  left: 12%;
-  width: 50%;
+  margin-left: 10%;
+  
+  width: 60%;
   z-index: 1;
   font-size: 18px;
   font-weight: 700;
   color: #fff
 }
 
+.quest3, .quest4{
+  margin-top: 10%;
+}
+
+
 .form_radio {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .form_radio:last-child{
@@ -540,6 +547,126 @@ textarea {
   color: rgb(20, 51, 119);
 }
 
+@media (max-width: 1230px){
+
+}
+
+
+@media (max-width: 1030px){
+  .intro, .q1, .q2, .q3, .q4, .q5, .q6{
+    height: 55vh;
+    min-height: 750px;
+  }
+  
+  .wrapper{
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 990px){
+  .intro{
+    height: 45vh;
+    min-height: 600px;
+  }
+
+  .subtitle{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .intro__text1, .intro__text2{
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 770px){
+  .q1, .q2, .q3, .q4, .q5, .q6{
+    height: 40vh;
+    min-height: 700px;
+  }
+  .intro{
+    height: 35vh;
+    min-height: 450px;
+  }
+
+  .intro__text{
+    max-width: 200px;
+  }
+
+
+  .wrapper{
+    width: 95%;
+  }
+
+  .quest1, .quest2, .quest4, .quest5 {
+    width: 90%;
+  }
+  .quest6, .quest6{
+    width: 80%;
+  }
+
+  .subtitle{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .intro__text1, .intro__text2{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+
+}
+
+@media (max-width: 545px){
+  
+  .intro, .q1, .q2, .q3, .q4, .q5, .q6{
+    height: 40vh;
+    min-height: 460px;
+  }
+  
+  .intro{
+    height: 30vh;
+    min-height: 350px;
+  }
+
+  .intro__title{
+    font-size: 28px;
+  }
+
+  .quest5{
+    width: 90%;
+  }
+
+  .wrapper{
+    margin-top: 10px;
+  }
+
+  .form_radio{
+    margin-bottom: 15px;
+  }
+
+  .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
+    margin-left: 5%;
+    font-size: 12px;
+  }
+  
+  .btn{
+    left: 25%;
+  }
+
+  .intro__text{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    max-width: 1200px;
+  }
+
+
+}
 
 
 /* ==========================================================================

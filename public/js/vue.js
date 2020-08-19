@@ -98,7 +98,7 @@ app6 = new Vue({
     },
 });
 
-
+var results
 
 app7 = new Vue({
     el: "#btn",
@@ -107,7 +107,8 @@ app7 = new Vue({
     },
     methods: {
         result(){
-            alert(app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter)
+            results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
+            alert(results)
         }
     }
 })
