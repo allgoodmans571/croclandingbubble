@@ -522,11 +522,12 @@ textarea {
 
 .result__text{
   font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .result__text.lower{
   font-size: 22px;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 .result__footer{
