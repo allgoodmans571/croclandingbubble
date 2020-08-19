@@ -109,9 +109,7 @@ textarea {
 .intro{
   background: url("../img/bg-img/intro.png") no-repeat center;
   background-size: cover;
-  height: 90vh;
-  min-height: 200px;
-  min-width: 320px;
+  height: 80vh;
   background-color: #28975F;
 }
 
@@ -216,7 +214,7 @@ textarea {
   }
 
   80% {
-      transform: translate(-10px, -330px) scale(1.25) rotate(360deg); 
+      transform: translate(-10px, -340px) scale(1.25) rotate(360deg); 
   }
 
   100%{
@@ -309,28 +307,27 @@ textarea {
 .q1{
   background: url("../img/bg-img/bg1.png") no-repeat;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
-  min-height: 190px;
 }
 
 .q2{
   background: url("../img/bg-img/bg2.png") no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
  
 }
 .q3{
   background: url("../img/bg-img/bg3.png") no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
 }
 .q4{
   background: url("../img/bg-img/bg4.png") no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
 }
 .q5{
@@ -341,13 +338,13 @@ textarea {
 
   background-blend-mode: color;
   
-  height: 75vh;
+  height: 80vh;
   
 }
 .q6{
   background: url("../img/bg-img/bg6.png") no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
 }
 
