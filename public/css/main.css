@@ -141,7 +141,7 @@ textarea {
   width: 3%;
   position: absolute;
   left: 42%;
-  top: 34%;
+  top: 42%;
   animation: bubblesMain 8s infinite linear;
 }
 
@@ -216,11 +216,11 @@ textarea {
   }
 
   80% {
-      transform: translate(-10px, -280px) scale(1.25) rotate(360deg); 
+      transform: translate(-10px, -330px) scale(1.25) rotate(360deg); 
   }
 
   100%{
-      transform:  translate(-320px, -440px) scale(3);
+      transform:  translate(-320px, -480px) scale(3);
   }
 }
 
@@ -236,7 +236,7 @@ textarea {
   }
 
   40% {
-      transform: translate(-160px, -180px) scale(2) rotate(120deg);
+      transform: translate(-160px, -270px) scale(2) rotate(120deg);
   }
 
   100%{
@@ -260,7 +260,7 @@ textarea {
   }
 
   80% {
-      transform: translate(80px, -180px) scale(2) rotate(180deg); 
+      transform: translate(80px, -270px) scale(2) rotate(180deg); 
   }
 
   100%{
@@ -285,21 +285,21 @@ textarea {
 
 .intro__btn{
   padding: 10px 0;
-  background-color: #622BDC;
+  background-color: #E0D436;
   text-align: center;
   cursor: pointer;
   transition: all .2s linear;
 }
 
-.intro__btn:hover{
-  background-color: rgb(20, 51, 119);
+.intro__btn a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.intro__btn a{
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+
+.intro__btn:hover{
+  background-color: #ada531;
 }
 
 .q1, .q2, .q3, .q4, .q5, .q6{
@@ -492,9 +492,9 @@ textarea {
 
 .result__inner{
   width: 40%;
-  color: #fff;
+  color: #000;
   margin-left: 80px;
-  margin-top: 90px;
+  margin-top: 110px;
 }
 
 .result__title{
@@ -503,16 +503,21 @@ textarea {
   margin-bottom: 70px;
 }
 
-.result__title-r{
-  color: #FF645A;
+.result__title-b{
+  color: #475DEB;
 }
 
 .result__title-o{
   color: #FFA436;
 }
 
-.result__title-w{
-  color: #fff
+.result__title-r{
+  color: #DF645B
+}
+
+.text__inner{
+  background-color: #E0D436;
+  padding: 10px 20px;
 }
 
 .result__text{
@@ -520,12 +525,16 @@ textarea {
 }
 
 .result__text.lower{
+  font-size: 22px;
   margin: 40px 0;
 }
 
+.result__footer{
+  font-size: 22px;
+}
+
 .idea_crock{
-  color: #475DEB;
-  text-decoration: none;
+  color: inherit;
   transition: all .2s linear;
 }
 
