@@ -190,7 +190,7 @@ textarea {
 	margin-right: 0;
 	line-height: 18px;
   user-select: none;
-  background: url("../img/circle.png") 0 0 no-repeat;
+  background: url("../img/check/circle.png") 0 0 no-repeat;
   height: 80%;
 }
 
@@ -200,19 +200,19 @@ textarea {
 }
 
 .form_radio.form_radio-r input[type=radio]:checked + label {
-  background: url("../img/checked/checked-r.png") 0 0 no-repeat;
+  background: url("../img/check/checked/checked-r.png") 0 0 no-repeat;
 }
 
 .form_radio.form_radio-g input[type=radio]:checked + label {
-  background: url("../img/checked/checked-g.png") 0 0 no-repeat;
+  background: url("../img/check/checked/checked-g.png") 0 0 no-repeat;
 }
 
 .form_radio.form_radio-b input[type=radio]:checked + label {
-  background: url("../img/checked/checked-b.png") 0 0 no-repeat;
+  background: url("../img/check/checked/checked-b.png") 0 0 no-repeat;
 }
  
 .form_radio.form_radio-o input[type=radio]:checked + label {
-  background: url("../img/checked/checked-o.png") 0 0 no-repeat;
+  background: url("../img/check/checked/checked-o.png") 0 0 no-repeat;
 }
 /* Hover */
 
