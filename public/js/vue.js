@@ -3,34 +3,18 @@ app1 = new Vue({
     
     data: {
         counter: 0,
-        true_answer: false,
-        false_answer: false
     },
     methods: {
         yes(){
-            if (this.true_answer == false) {
-                this.counter++
-                this.true_answer = true
-                this.false_answer = false
-   
-            }
-            
+            this.counter = 1
         },
-        
+           
         no(){
-            if (this.false_answer == false) {
-                if (this.counter != 0) {
-                    this.counter--
-                }
-                this.false_answer = true
-                this.true_answer = false
-
-            }
-        },
-        
+            this.counter = 0
     
-    },  
-      
+        },
+    },
+               
 });
 
 app2 = new Vue({
@@ -38,25 +22,13 @@ app2 = new Vue({
     
     data: {
         counter: 0,
-        true_answer: false,
-        false_answer: false
     },
     methods: {
         yes(){
-            if (this.true_answer == false) {
-                this.counter++
-                this.true_answer = true
-                this.false_answer = false
-            }
+            this.counter = 1
         },
         no(){
-            if (this.false_answer == false) {
-                if (this.counter != 0) {
-                    this.counter--
-                }
-                this.false_answer = true
-                this.true_answer = false
-            }
+            this.counter = 0
         }
     },
 });
@@ -66,25 +38,13 @@ app3 = new Vue({
     
     data: {
         counter: 0,
-        true_answer: false,
-        false_answer: false
     },
     methods: {
         yes(){
-            if (this.true_answer == false) {
-                this.counter++
-                this.true_answer = true
-                this.false_answer = false
-            }
+            this.counter = 1
         },
         no(){
-            if (this.false_answer == false) {
-                if (this.counter != 0) {
-                    this.counter--
-                }
-                this.false_answer = true
-                this.true_answer = false
-            }
+            this.counter = 0
         }
     },
 });
@@ -94,25 +54,13 @@ app4 = new Vue({
     
     data: {
         counter: 0,
-        true_answer: false,
-        false_answer: false
     },
     methods: {
         yes(){
-            if (this.true_answer == false) {
-                this.counter++
-                this.true_answer = true
-                this.false_answer = false
-            }
+            this.counter = 1
         },
         no(){
-            if (this.false_answer == false) {
-                if (this.counter != 0) {
-                    this.counter--
-                }
-                this.false_answer = true
-                this.true_answer = false
-            }
+            this.counter = 0
         }
     },
 });
@@ -122,26 +70,13 @@ app5 = new Vue({
     
     data: {
         counter: 0,
-        true_answer: false,
-        false_answer: false
     },
     methods: {
         yes(){
-            if (this.true_answer == false) {
-                this.counter++
-                this.true_answer = true
-                this.false_answer = false
-
-            }
+            this.counter = 1
         },
         no(){
-            if (this.false_answer == false) {
-                if (this.counter != 0) {
-                    this.counter--
-                }
-                this.false_answer = true
-                this.true_answer = false
-            }
+            this.counter = 0
         }
     },
 });
@@ -151,25 +86,13 @@ app6 = new Vue({
     
     data: {
         counter: 0,
-        true_answer: false,
-        false_answer: false
     },
     methods: {
         yes(){
-            if (this.true_answer == false) {
-                this.counter++
-                this.true_answer = true
-                this.false_answer = false
-            }
+            this.counter = 1
         },
         no(){
-            if (this.false_answer == false) {
-                if (this.counter != 0) {
-                    this.counter--
-                }
-                this.false_answer = true
-                this.true_answer = false
-            }
+            this.counter = 0
         }
         
     },
