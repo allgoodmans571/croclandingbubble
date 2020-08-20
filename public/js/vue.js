@@ -137,7 +137,7 @@ app7 = new Vue({
         },
 
         result(){
-            //results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
+            results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
 
             if (results > 4) {
                 result1.visible = true
