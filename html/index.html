@@ -420,6 +420,7 @@
     console.log(data);
 
     let response = await fetch('localhost:8080/getData', {
+      mode: 'CROS',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
