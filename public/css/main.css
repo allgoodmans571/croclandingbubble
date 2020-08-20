@@ -17,16 +17,19 @@ html {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
 
-
+@font-face {
+  font-family: Crock; /* Гарнитура шрифта */
+  src: url("../fonts/crock3.ttf"); /* Путь к файлу со шрифтом */
+ }
 
 body{
-  font-family: "Russo One" sans-serif;
+  font-family: Crock, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +37,7 @@ body{
 .container{
   max-width: 1280px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -108,11 +112,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/*------------- intro ---------------*/
+
 .intro{
-  background: url("../img/bg-img/intro.png");
-  height: 80vh;
+  background: url("../img/bg-img/intro-bg.png") center no-repeat;
+  background-size: cover;
   background-color: #28975F;
-  position: relative;
 }
 
 .intro__img{
@@ -126,9 +132,9 @@ textarea {
   padding: 2% 0 0 2%;
 }
 
-.intro__text{
+.intro__article{
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   max-width: 300px;
 }
@@ -139,7 +145,7 @@ textarea {
   text-transform: uppercase;
   color: #fff;
   font-weight: 900;
-  letter-spacing: 0.5rem;
+  letter-spacing: .2rem;
 }
 
 .intro__title span{
@@ -148,13 +154,47 @@ textarea {
   color: transparent;
 }
 
+.subtitle{
+  font-size: 36px;
+  color: #622BDC;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
 
+.intro__text-upper, .intro__text-lower{
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.intro__btn{
+  padding: 10px 0;
+  background-color: #E0D436;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.intro__btn a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.intro__btn:hover{
+  background-color: #ada531;
+}
+
+
+/*------------ bubbles -------------*/
 
 .e{
   width: 3%;
   position: absolute;
-  left: 42%;
-  top: 42%;
+  left: 44%;
+  top: 48%;
   animation: bubblesMain 8s infinite linear;
 }
 
@@ -169,7 +209,6 @@ textarea {
 .e.e11{
   animation: bubblesAdd-r 4s infinite linear;
 }
-
 
 .e2{
   animation-delay: 1s;
@@ -213,6 +252,7 @@ textarea {
   animation-delay: 8.5s;
 }
 
+/*----------------- bubbles animation -------------*/
 
 @keyframes bubblesMain{
     
@@ -221,15 +261,15 @@ textarea {
   }
   
   20% {
-      transform: translate(-80px, -40px) scale(0.75) rotate(60deg);
+      transform: translate(-100px, -80px) scale(0.75) rotate(60deg);
   }
 
   40% {
-      transform: translate(-30px, -80px) scale(1) rotate(120deg);
+      transform: translate(-40px, -100px) scale(1) rotate(120deg);
   }
 
   80% {
-      transform: translate(-10px, -260px) scale(1.25) rotate(360deg); 
+      transform: translate(-30px, -310px) scale(1.25) rotate(360deg); 
   }
 
   100%{
@@ -281,76 +321,109 @@ textarea {
   }
 }
 
+/*------------------- papper --------------------*/
 
-.subtitle{
-  font-size: 36px;
-  color: #622BDC;
-  font-weight: 700;
-  margin-bottom: 30px;
+.papper{
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  transform: rotate(-45deg);
+  animation: papper 4s infinite linear;
 }
 
-.intro__text1, .intro__text2{
-  font-weight: 400;
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 30px;
+/*----------------- papper animation -------------------*/
+
+@keyframes papper{
+    0% {
+      transform: rotate(180deg);
+    }
+
+    30% {
+      transform: translate(-150px, 400px) rotate(360deg)scale(1.1);
+    }
+
+    60% {
+      transform: translate(-250px, 520px) rotate(540deg) scale(1.1);
+    }
+
+    100% {
+      transform: translate(-122px, 557px) rotate(720deg) scale(1.1);
+    }
+
+
 }
 
-.intro__btn{
-  padding: 10px 0;
-  background-color: #E0D436;
-  text-align: center;
-  cursor: pointer;
-  transition: all .2s linear;
-}
 
-.intro__btn a{
-  color: #000;
-  text-decoration: none;
-  font-weight: 700;
-}
+/*----------------- section -----------------*/
 
-
-.intro__btn:hover{
-  background-color: #ada531;
-}
-
-.intro, .q1, .q2, .q3, .q4, .q5, .q6{
+.intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail, .result1, .result2, .result3 {
   position: relative;
-  background-size: cover;
   height: 90vh;
-  width: 100%;
   min-height: 800px;
+  overflow: hidden;
+}
+
+.mail, .result1, .result2, .result3{
+  height: 75vh;
 }
 
 .q1{
   background: url("../img/bg-img/bg1.png") no-repeat center;
-}
-
-.wrapper{
-  margin-top: 5%;
-  margin-left: 2%;
+  background-size: cover;
 }
 
 .q2{
   background: url("../img/bg-img/bg2.png") no-repeat center;
- 
+  background-size: cover;
 }
 .q3{
   background: url("../img/bg-img/bg3.png") no-repeat center;
+  background-size: cover;
 }
 .q4{
   background: url("../img/bg-img/bg4.png") no-repeat center;
+  background-size: cover;
 }
 
 .q5{
   background: url("../img/bg-img/bg5.png") no-repeat center;
+  background-size: cover;
 }
 
 .q6{
   background: url("../img/bg-img/bg6.png") no-repeat center;
+  background-size: cover;
 }
 
+.mail{
+  background: url("../img/bg-img/mail-bg.png") no-repeat center;
+  background-size: cover;
+}
+
+
+.result1 {
+  background: url("../img/bg-img/result1.png") no-repeat center;
+  background-size: cover;
+}
+
+
+.result2 {
+  background: url("../img/bg-img/result2.png") no-repeat center;
+  background-size: cover;
+}
+
+.result3 {
+  background: url("../img/bg-img/result3.png") no-repeat center;
+  background-size: cover;
+}
+
+/*-------------------- wrapper --------------*/
+
+.wrapper{
+  margin-left: 3%;
+}
+
+/*--------------- question ------------------*/
 
 .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
   margin-left: 10%;
@@ -366,6 +439,7 @@ textarea {
   margin-top: 10%;
 }
 
+/*----------------- form -----------------------*/
 
 .form_radio {
 	margin-bottom: 30px;
@@ -389,9 +463,11 @@ textarea {
   height: 50%;
 }
 
-/* Checked */
+
+/*------------------- form checked -----------------------*/
+
 .form_radio input[type=radio]:checked + label {
-  height: 20px;
+  height: 25px;
 }
 
 .form_radio.form_radio-r input[type=radio]:checked + label {
@@ -409,20 +485,55 @@ textarea {
 .form_radio.form_radio-o input[type=radio]:checked + label {
   background: url("../img/check/checked/checked-o.png") 0 0 no-repeat;
 }
-/* Hover */
 
- 
-/* Disabled */
-.form_radio input[type=radio]:disabled + label:before {
-	filter: grayscale(100%);
+/* ---------------------------------- */
+.btn__result{
+  position: absolute;
+  left: 45%;
+  bottom: 2%;
+  border: none;
+}
+
+/*---------------------- mail --------------------------*/
+
+.mail__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 40%;
+  margin: 0 auto;
 }
 
 
+.mail__wrapper {
+  margin-top: 5%;
+}
+
+.mail__input {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  background-color: #DF645B;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.btn:hover{
+  background-color: rgb(20, 51, 119);
+}
+
+
+.btn__mail{
+  margin-top: 45px;
+}
+
+/*------------------ btn styles -----------------*/
 
 .btn{
-  position: absolute;
-  left: 50%;
-  bottom: 2%;
   border: none;
   padding: 10px 30px;
   cursor: pointer;
@@ -433,76 +544,22 @@ textarea {
   transition: all .2s linear;
 }
 
-.btn:hover{
-  background-color: rgb(20, 51, 119);
-}
-
-.mail{
-  background: url("../img/bg-img/mail.png") no-repeat center;
-  background-size: cover;
-  height: 75vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mail__input1 {
-  margin-top: 15%;
-}
-
-.mail__input2{
-  border: 1px solid #fff;
-  padding: 15px 60px;
-  background-color: #DF645B;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.btn.btn2{
-  margin-top: 45px;
-  position: static;
-}
-
-.result1 {
-  background: url("../img/bg-img/result1.png") no-repeat center;
-  background-size: cover;
-  height: 75vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-
-.result2 {
-  background: url("../img/bg-img/result2.png") no-repeat center;
-  background-size: cover;
-  height: 75vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.result3 {
-  background: url("../img/bg-img/result3.png") no-repeat center;
-  background-size: cover;
-  height: 75vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
+/*------------------ result text ---------------*/
 
 .result__inner{
   width: 40%;
-  color: #000;
+  color: #fff;
   margin-left: 80px;
-  margin-top: 110px;
+  margin-top: 50px;
+}
+
+.result__counter{
+  font-size: 48px;
+  margin-bottom: 80px;
 }
 
 .result__title{
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 700;
   margin-bottom: 70px;
 }
@@ -519,11 +576,6 @@ textarea {
   color: #DF645B
 }
 
-.text__inner{
-  background-color: #E0D436;
-  padding: 10px 20px;
-}
-
 .result__text{
   font-size: 18px;
   margin-bottom: 40px;
@@ -538,33 +590,63 @@ textarea {
   font-size: 22px;
 }
 
-.idea_crock{
+.idea__crock{
   color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
   transition: all .2s linear;
 }
 
-.idea_crock:hover {
+.idea__crock.idea__crock-b:hover {
   color: rgb(20, 51, 119);
+  border-bottom-color: rgb(20, 51, 119);
 }
+
+.idea__crock.idea__crock-o:hover{
+  color: #c98031;
+  border-bottom-color: #c98031;
+}
+
+.idea__crock.idea__crock-r:hover{
+  color: #a84a48;
+  border-bottom-color: #a84a48;
+}
+
+
+
+
+/*----------------- media 1230px--------------*/
+
 
 @media (max-width: 1230px){
 
 }
 
+/*----------------- media 1030px--------------*/
 
 @media (max-width: 1030px){
+
+  /*---------------- section ------------*/
+
   .intro, .q1, .q2, .q3, .q4, .q5, .q6{
     height: 55vh;
     min-height: 750px;
   }
   
+  /*---------------- wrapper ------------*/
+
   .wrapper{
     width: 80%;
   }
 
 }
 
+/*----------------- media 990px--------------*/
+
 @media (max-width: 990px){
+
+  /*--------------- intro ---------------*/
+
   .intro{
     height: 45vh;
     min-height: 600px;
@@ -575,14 +657,27 @@ textarea {
     margin-bottom: 15px;
   }
 
-  .intro__text1, .intro__text2{
+  .intro__text-upper, .intro__text-lower{
     margin-bottom: 15px;
     font-size: 16px;
   }
 
+  .result__inner{
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 80px;
+  }
+
+
+
 }
 
+/*----------------- media 770px--------------*/
+
 @media (max-width: 770px){
+
+  /*---------------- section --------------------*/
+
   .q1, .q2, .q3, .q4, .q5, .q6{
     height: 40vh;
     min-height: 700px;
@@ -592,14 +687,29 @@ textarea {
     min-height: 450px;
   }
 
+  /*---------------- intro text --------------------*/
+
   .intro__text{
     max-width: 200px;
   }
 
+  .subtitle{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .intro__text-upper, .intro__text-lower{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  /*----------------- wrapper ---------------*/
 
   .wrapper{
     width: 95%;
   }
+
+  /*----------------- question ------------------*/
 
   .quest1, .quest2, .quest4, .quest5 {
     width: 90%;
@@ -608,21 +718,19 @@ textarea {
     width: 80%;
   }
 
-  .subtitle{
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+  /* animation */
 
-  .intro__text1, .intro__text2{
-    margin-bottom: 10px;
-    font-size: 12px;
+  .e, .papper{
+    display: none;
   }
-
 
 }
 
+/*----------------- media 545px--------------*/
+
 @media (max-width: 545px){
-  
+  /*---------------- section ------------------*/
+
   .intro, .q1, .q2, .q3, .q4, .q5, .q6{
     height: 40vh;
     min-height: 460px;
@@ -633,38 +741,67 @@ textarea {
     min-height: 350px;
   }
 
-  .intro__title{
-    font-size: 28px;
+  .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
+    margin-left: 5%;
+    font-size: 12px;
   }
 
   .quest5{
     width: 90%;
   }
 
-  .wrapper{
-    margin-top: 10px;
+  /*--------------- intro text ---------------*/
+
+  .intro__title{
+    font-size: 28px;
   }
 
-  .form_radio{
-    margin-bottom: 15px;
-  }
-
-  .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
-    margin-left: 5%;
-    font-size: 12px;
-  }
-  
-  .btn{
-    left: 25%;
-  }
-
-  .intro__text{
+  .intro__article{
     position: absolute;
     bottom: 50%;
     right: 50%;
     max-width: 1200px;
   }
 
+  /*--------------- wrapper ------------------*/
+
+  .wrapper{
+    margin-top: 10px;
+  }
+
+  /*--------------- form ------------------*/
+
+  .form_radio{
+    margin-bottom: 15px;
+  }
+
+  /*-------------- btn__result -----------*/
+
+  .btn__result{
+    left: 25%;
+  }
+
+  /*-------------- result -----------*/
+
+  .result__inner{
+    width: 95%;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .result__title{
+    font-size: 38px;
+  }
+
+  .result__counter{
+    font-size: 32px;
+  }
+
+  .result__text.lower, .result__footer{
+    font-size: 16px;
+  }
 
 }
 
