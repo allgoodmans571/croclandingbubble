@@ -133,10 +133,6 @@ app7 = new Vue({
     },
     methods: {
 
-        scrollToResult() {
-            window.scrollTo(0, document.body.scrollHeight)
-        },
-
         result(){
             results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
 
@@ -158,16 +154,15 @@ app7 = new Vue({
                 result1.visible = false
                 result2.visible = false
             }
-
-            this.scrollToResult()
             
+            setTimeout(function scrollToResult() {
+                window.scrollTo(0, document.body.scrollHeight)
+            }, 1)  
         },
 
-        },
-
+    },
 
 });
-
 
 
 
