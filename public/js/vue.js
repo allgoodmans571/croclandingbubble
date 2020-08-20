@@ -20,6 +20,7 @@ app1 = new Vue({
 
 });
 
+
 app2 = new Vue({
     el: "#form_radio2",
 
