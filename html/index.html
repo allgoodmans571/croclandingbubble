@@ -26,9 +26,6 @@
   <section class="intro">
     <div class="container">
 
-      <div class="logo">
-        <a href="#" target="_black"><img src="../public/img/logo.png" alt=""></a>
-      </div>
 
       <div class="intro__title">
         Ид<span>e</span>и Крок
@@ -98,10 +95,6 @@
 
   <section class="q1">
     <div class="container">
-      
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
 
       <img class="wrapper" src="../public/img/bg-img/wrapper1.png" alt="">
       
@@ -166,11 +159,7 @@
   </section> <!-- /q2 -->
 
   <section class="q3">
-    <div class="container">
-      
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
+    <div class="container">   
 
       <img class="wrapper"src="../public/img/bg-img/wrapper3.png" alt="">
         
@@ -202,10 +191,6 @@
   <section class="q4">   
     <div class="container">
       
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
-
       <!-- papper -->
 
       <object type="image/svg+xml" data="../public/img/animation/papper.svg" class="papper">
@@ -240,10 +225,6 @@
 
   <section class="q5" id="form_radio5">
     <div class="container">
-     
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
       
       <img class="wrapper"src="../public/img/bg-img/wrapper5.png" alt="">
 
@@ -275,10 +256,6 @@
   <section class="q6">
     <div class="container">
       
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
-      
       <img class="wrapper" src="../public/img/bg-img/wrapper6.png" alt="">
         
       <form class="quest6" id="form_radio6">
@@ -303,7 +280,7 @@
         </div>
       </form>
 
-      <button v-on:click="result" id="btn" class="btn  btn__result">
+      <button class="btn btn__result">
         Результаты
       </button>
     
@@ -313,10 +290,6 @@
 
   <section class="mail">
       
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
-      
       <div class="mail__inner">  
         <img class="mail-q" src="../public/img/bg-img/wrapper-mail.png" alt="">
         
@@ -324,19 +297,15 @@
           <input class="mail__input" type="mail" name="mail" id="mail" placeholder="Ваш email...">
         </form>
 
-        <button class="btn btn__mail" onclick="sendData()">
+        <button v-on:click="result" class="btn btn__mail" id="btn" onclick="sendData()">
               Оставить!
         </button>
       </div>
 
   </section> <!-- mail -->
 
-  <section class="result1">
+  <section v-if="visible" class="result1" id="result1" ref="component">
     <div class="container">
-      
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
 
       <div class="result__inner">
 
@@ -364,11 +333,8 @@
     </div> <!-- container -->
   </section> <!-- result1 -->
 
-  <section class="result2">
+  <section v-if="visible" class="result2" id="result2">
     <div class="container">
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
 
       <div class="result__inner">
 
@@ -397,11 +363,8 @@
     </div> <!-- container -->
   </section> <!-- result2 -->
 
-  <section class="result3">
+  <section v-if="visible" class="result3" id="result3">
     <div class="container">
-      <div class="logo">
-        <a href="#"><img src="../public/img/logo.png" alt=""></a>
-      </div>
 
       <div class="result__inner">
 

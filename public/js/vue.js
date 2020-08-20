@@ -101,7 +101,29 @@ app6 = new Vue({
     },
 });
 
-var results
+result1 = new Vue({
+    el: "#result1",
+    data: {
+        visible: false
+    }
+})
+
+result2 = new Vue({
+    el: "#result2",
+    data: {
+        visible: false
+    }
+})
+
+result3 = new Vue({
+    el: "#result3",
+    data: {
+        visible: false
+    }
+})
+
+
+var results = 0
 
 app7 = new Vue({
     el: "#btn",
@@ -109,12 +131,46 @@ app7 = new Vue({
 
     },
     methods: {
+
+        scrollToResult() {
+            window.scrollTo(0, document.body.scrollHeight)
+        },
+
         result(){
-            results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
-            alert(results)
-        }
-    }
+            //results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
+
+            if (results > 4) {
+                result1.visible = true
+                
+                result2.visible = false 
+                result3.visible = false
+            
+            } else if (results > 2){
+                result2.visible = true
+
+                result1.visible = false
+                result3.visible = false
+
+            } else {
+                result3.visible = true
+
+                result1.visible = false
+                result2.visible = false
+            }
+
+            this.scrollToResult()
+            
+        },
+
+        },
+
+
 });
+
+
+
+
+
 //
 // async function sendData() {
 //   let Points = document.getElementById(app7.results);

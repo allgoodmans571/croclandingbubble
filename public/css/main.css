@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: Crock; /* Гарнитура шрифта */
-  src: url("../fonts/crock3.ttf"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/crock1.otf"); /* Путь к файлу со шрифтом */
  }
 
 body{
@@ -122,6 +122,7 @@ textarea {
 }
 
 .intro__img{
+  max-width: 750px;
   width: 60%;
   position: absolute;
   bottom: 0;
@@ -134,14 +135,14 @@ textarea {
 
 .intro__article{
   position: absolute;
-  bottom: 10%;
-  right: 5%;
+  bottom: 15%;
+  right: 10%;
   max-width: 300px;
 }
 
 .intro__title{
   text-align: center;
-  font-size: 64px;
+  font-size: 72px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 900;
@@ -169,6 +170,7 @@ textarea {
 }
 
 .intro__btn{
+  font-size: 18px;
   padding: 10px 0;
   background-color: #E0D436;
   text-align: center;
@@ -265,11 +267,11 @@ textarea {
   }
 
   40% {
-      transform: translate(-40px, -100px) scale(1) rotate(120deg);
+      transform: translate(-35px, -100px) scale(1) rotate(120deg);
   }
 
   80% {
-      transform: translate(-30px, -310px) scale(1.25) rotate(360deg); 
+      transform: translate(-20px, -350px) scale(1.25) rotate(360deg); 
   }
 
   100%{
@@ -328,7 +330,7 @@ textarea {
   top: 20%;
   right: -10%;
   transform: rotate(-45deg);
-  animation: papper 4s infinite linear;
+  animation: papper 3s infinite linear;
 }
 
 /*----------------- papper animation -------------------*/
@@ -347,7 +349,7 @@ textarea {
     }
 
     100% {
-      transform: translate(-122px, 557px) rotate(720deg) scale(1.1);
+      transform: translate(-122px, 700px) rotate(720deg) scale(1.1);
     }
 
 
@@ -420,6 +422,7 @@ textarea {
 /*-------------------- wrapper --------------*/
 
 .wrapper{
+  margin-top: 2%;
   margin-left: 3%;
 }
 
@@ -489,7 +492,7 @@ textarea {
 /* ---------------------------------- */
 .btn__result{
   position: absolute;
-  left: 45%;
+  left: 43%;
   bottom: 2%;
   border: none;
 }
@@ -769,19 +772,19 @@ textarea {
     margin-top: 10px;
   }
 
-  /*--------------- form ------------------*/
+  /*--------------- form --------------------*/
 
   .form_radio{
     margin-bottom: 15px;
   }
 
-  /*-------------- btn__result -----------*/
+  /*-------------- btn__result --------------*/
 
   .btn__result{
     left: 25%;
   }
 
-  /*-------------- result -----------*/
+  /*-------------- result ------------99-----*/
 
   .result__inner{
     width: 95%;
