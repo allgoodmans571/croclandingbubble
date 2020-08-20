@@ -20,6 +20,7 @@ app1 = new Vue({
 
 });
 
+
 app2 = new Vue({
     el: "#form_radio2",
 
@@ -101,7 +102,7 @@ app6 = new Vue({
     },
 });
 
-var results
+var results;
 
 app7 = new Vue({
     el: "#btn",
@@ -115,23 +116,23 @@ app7 = new Vue({
         }
     }
 });
-//
-// async function sendData() {
-//   let Points = document.getElementById(app7.results);
-//   let Mail = document.getElementById('mail');
-//
-//   let data = {
-//     Points: Points,
-//     Mail: Mail.value
-//   };
-//
-//   console.log(data);
-//
-//   let response = await fetch('localhost:80/getData', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json;charset=utf-8'
-//     },
-//     body: JSON.stringify(data)
-//   });
-// };
+
+async function sendData() {
+    let Points = results;
+    let Mail = document.getElementById('mail');
+
+    let data = {
+        Points: Points,
+         Mail: Mail.value
+       };
+
+       console.log(data);
+
+       let response = await fetch('http://localhost:8080/getData', {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json;charset=utf-8'
+         },
+         body: JSON.stringify(data)
+       });
+     }

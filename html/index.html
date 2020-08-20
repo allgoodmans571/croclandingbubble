@@ -446,31 +446,6 @@
 
 <!---------------- JS --------------------->
 
-  <script>
-    
-    async function sendData() {
-      let pts = document.getElementById(results);
-      let Mail = document.getElementById('mail');
-
-      let data = {
-        Points: pts,
-        Mail: Mail.value
-      };
-
-      console.log(data);
-
-      let response = await fetch('localhost:8080/getData', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(data)
-      });
-    }
-
-  </script>
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="../public/js/vendor/modernizr-3.11.2.min.js"></script>
