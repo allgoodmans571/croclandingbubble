@@ -1,3 +1,6 @@
+
+// counter results
+
 app1 = new Vue({
     el: "#form_radio1",
 
