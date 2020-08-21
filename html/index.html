@@ -27,7 +27,7 @@
     <div class="container">
 
       <div class="intro__title">
-        Ид<span>e</span>и Крок
+        Ид<span>Е</span>и Крок
       </div>
 
       <!-- bubbles -->
@@ -108,14 +108,12 @@
         </div>
       </div>
         
-        <div class="form__q1">
-          <div class="form__text1">
-            Какую идею предложили коллеги, 
-            чтобы сохранить годовую прибыль
-            проекта?
-          </div>
+      <div class="form__q1">
+        <div class="form__text1">
+          Какую идею предложили коллеги, чтобы сохранить годовую прибыль проекта?
         </div>
-        
+      </div>
+      <div class="quest__container">
         <form class="quest1" id="form_radio1">
           <div class="form_radio form_radio-r">
             <input v-on:click="no" id="quest1-1" type="radio" name="quest1" value="1">
@@ -137,6 +135,7 @@
             <label for="quest1-4">Вызвать Гаечку, чтобы она все пофиксила</label>
           </div>
         </form>
+      </div>
 
     </div> <!-- /container -->
   </section> <!-- /q1 -->
@@ -157,17 +156,16 @@
         </div>
       </div>
 
-          <div class="form__q2">
-            <div class="form__text2">
-              Какое решение от коллеги помогает экономить 5 млн в год и сегодня трансформировалось во внешний проект?
-            </div>
-          </div>
-          
-          <form class="quest2" id="form_radio2">
+      <div class="form__q2">
+        <div class="form__text2">
+          Какое решение от коллеги помогает экономить 5 млн в год и сегодня трансформировалось во внешний проект?
+        </div>
+      </div>
+      <div class="quest__container">
+        <form class="quest2" id="form_radio2">
           <div class="form_radio form_radio-g">
             <input v-on:click="yes" id="quest2-1" type="radio" name="quest2" value="1">
-            <label for="quest2-1">Внедрение беспроводных датчиков для создания карты
-            температуры и настройки системы кондиционирования</label>
+            <label for="quest2-1">Внедрение беспроводных датчиков для создания карты температуры и настройки системы кондиционирования</label>
           </div>
 
           <div class="form_radio form_radio-g">
@@ -199,32 +197,33 @@
 
       <div class="form__q3">
         <div class="form__text3">
-          Какое решение от коллеги помогаетэкономить 5 млн в год и сегодня трансформировалось во внешний проект?
+          Какое решение от коллеги помогает экономить 5 млн в год и сегодня трансформировалось во внешний проект?
         </div>
       </div>
+      <div class="quest__container">
+        <form class="quest3" id="form_radio3">
+          <div class="form_radio form_radio-b">
+            <input v-on:click="yes" id="quest3-1" type="radio" name="quest3" value="1">
+            <label for="quest3-1">Спросить в Флудилке КРОК, там всегда помогут</label>
+          </div>
 
-      <form class="quest3" id="form_radio3">
-        <div class="form_radio form_radio-b">
-          <input v-on:click="yes" id="quest3-1" type="radio" name="quest3" value="1">
-          <label for="quest3-1">Спросить в Флудилке КРОК, там всегда помогут</label>
-        </div>
+          <div class="form_radio form_radio-b">
+            <input v-on:click="no" id="quest3-2" type="radio" name="quest3" value="2">
+            <label for="quest3-2">Написать админам в корпоративном канале для сотрудников @crocnews</label>
+          </div>
 
-        <div class="form_radio form_radio-b">
-          <input v-on:click="no" id="quest3-2" type="radio" name="quest3" value="2">
-          <label for="quest3-2">Написать админам в корпоративном канале для сотрудников @crocnews</label>
-        </div>
+          <div class="form_radio form_radio-b">
+            <input v-on:click="no" id="quest3-3" type="radio" name="quest3" value="2">
+            <label for="quest3-3">Написать админам в корпоративном внешнем канале @crocitnow</label>
+          </div>
 
-        <div class="form_radio form_radio-b">
-          <input v-on:click="no" id="quest3-3" type="radio" name="quest3" value="2">
-          <label for="quest3-3">Написать админам в корпоративном внешнем канале @crocitnow</label>
-        </div>
-
-        <div class="form_radio form_radio-b">
-          <input v-on:click="no" id="quest3-4" type="radio" name="quest3" value="4">
-          <label for="quest3-4">Создать корпоративного бота @croclive</label>
-        </div>
-      </form>
-
+          <div class="form_radio form_radio-b">
+            <input v-on:click="no" id="quest3-4" type="radio" name="quest3" value="4">
+            <label for="quest3-4">Создать корпоративного бота @croclive</label>
+          </div>
+        </form>
+      </div>
+    
     </div> <!-- /container -->
   </section> <!-- /q3 -->
 
@@ -252,28 +251,30 @@
         </div>
       </div>
       
-      <form class="quest4" id="form_radio4">
-        <div class="form_radio form_radio-r">
-          <input v-on:click="no" id="quest4-1" type="radio" name="quest4" value="1">
-          <label for="quest4-1">Договорились, чтобы все сразу утвержала Людмила Космовская</label>
-        </div>
+      <div class="quest__container">
+        <form class="quest4" id="form_radio4">
+          <div class="form_radio form_radio-r">
+            <input v-on:click="no" id="quest4-1" type="radio" name="quest4" value="1">
+            <label for="quest4-1">Договорились, чтобы все сразу утвержала Людмила Космовская</label>
+          </div>
 
-        <div class="form_radio form_radio-r">
-          <input v-on:click="yes" id="quest4-2" type="radio" name="quest4" value="2">
-          <label for="quest4-2">Пересмотрели процесс и убрали лишние шаги в соглосовании</label>
-        </div>
+          <div class="form_radio form_radio-r">
+            <input v-on:click="yes" id="quest4-2" type="radio" name="quest4" value="2">
+            <label for="quest4-2">Пересмотрели процесс и убрали лишние шаги в соглосовании</label>
+          </div>
 
-        <div class="form_radio form_radio-r">
-          <input v-on:click="no" id="quest4-3" type="radio" name="quest4" value="2">
-          <label for="quest4-3">Выделил 1 рабочий день в месяц, когда все сразу проверяется и согласовывается</label>
-        </div>
+          <div class="form_radio form_radio-r">
+            <input v-on:click="no" id="quest4-3" type="radio" name="quest4" value="2">
+            <label for="quest4-3">Выделил 1 рабочий день в месяц, когда все сразу проверяется и согласовывается</label>
+          </div>
 
-        <div class="form_radio form_radio-r">
-          <input v-on:click="no" id="quest4-4" type="radio" name="quest4" value="4">
-          <label for="quest4-4">Ничего не сделали</label>
-        </div>
-      </form>
-
+          <div class="form_radio form_radio-r">
+            <input v-on:click="no" id="quest4-4" type="radio" name="quest4" value="4">
+            <label for="quest4-4">Ничего не сделали</label>
+          </div>
+        </form>
+      </div>
+    
     </div> <!-- /container -->
   </section> <!-- /q4 -->
 
@@ -296,29 +297,30 @@
         </div>
       </div>
 
+      <div class="quest__container">
+        <form class="quest5" id="form_radio5">
+          <div class="form_radio form_radio-o">
+            <input v-on:click="yes" id="quest5-1" type="radio" name="quest5" value="1">
+            <label for="quest5-1">Создать робота, который опрашивает заказчика по вопросу возврата акта</label>
+          </div>
 
-      <form class="quest5" id="form_radio5">
-        <div class="form_radio form_radio-o">
-          <input v-on:click="yes" id="quest5-1" type="radio" name="quest5" value="1">
-          <label for="quest5-1">Создать робота, который опрашивает заказчика по вопросу возврата акта</label>
-        </div>
+          <div class="form_radio form_radio-o">
+            <input v-on:click="no" id="quest5-2" type="radio" name="quest5" value="2">
+            <label for="quest5-2">Договориться c финансистами не возвращать акты</label>
+          </div>
 
-        <div class="form_radio form_radio-o">
-          <input v-on:click="no" id="quest5-2" type="radio" name="quest5" value="2">
-          <label for="quest5-2">Договориться c финансистами не возвращать акты</label>
-        </div>
+          <div class="form_radio form_radio-o">
+            <input v-on:click="no" id="quest5-3" type="radio" name="quest5" value="2">
+            <label for="quest5-3">Никакая, проблема еще не решена</label>
+          </div>
 
-        <div class="form_radio form_radio-o">
-          <input v-on:click="no" id="quest5-3" type="radio" name="quest5" value="2">
-          <label for="quest5-3">Никакая, проблема еще не решена</label>
-        </div>
-
-        <div class="form_radio form_radio-o">
-          <input v-on:click="no" id="quest5-4" type="radio" name="quest5" value="4">
-          <label for="quest5-4">Проблему решить невозможно</label>
-        </div>
-      </form>
-
+          <div class="form_radio form_radio-o">
+            <input v-on:click="no" id="quest5-4" type="radio" name="quest5" value="4">
+            <label for="quest5-4">Проблему решить невозможно</label>
+          </div>
+        </form>
+      </div>
+    
     </div> <!-- /container -->
   </section> <!-- /q5 -->
 
@@ -334,33 +336,34 @@
           А теперь представим, что тебе нужны свежие идеи для оптимизации своей работы, что ты  будешь делать?
         </div>
       </div>
+      
+        <form class="quest6" id="form_radio6">
+          <div class="form_radio form_radio-b">
+            <input v-on:click="no" id="quest6-1" type="radio" name="quest6" value="1">
+            <label for="quest6-1">Зайду в Jive на страницу "Идей КРОК" и посмотрю идеи других коллег</label>
+          </div>
 
-      <form class="quest6" id="form_radio6">
-        <div class="form_radio form_radio-b">
-          <input v-on:click="no" id="quest6-1" type="radio" name="quest6" value="1">
-          <label for="quest6-1">Зайду в Jive на страницу "Идей КРОК" и посмотрю идеи других коллег</label>
-        </div>
+          <div class="form_radio form_radio-b">
+            <input v-on:click="yes" id="quest6-2" type="radio" name="quest6" value="2">
+            <label for="quest6-2">Напишу вопрос на стикер "Как сделать лучше?" и повешу рядом,  переоидчески посматривая на него</label>
+          </div>
 
-        <div class="form_radio form_radio-b">
-          <input v-on:click="yes" id="quest6-2" type="radio" name="quest6" value="2">
-          <label for="quest6-2">Напишу вопрос на стикер "Как сделать лучше?" и повешу рядом,  переоидчески посматривая на него</label>
-        </div>
+          <div class="form_radio form_radio-b">
+            <input v-on:click="no" id="quest6-3" type="radio" name="quest6" value="2">
+            <label for="quest6-3">Выпишу проблемы и соберу команду для креатива</label>
+          </div>
 
-        <div class="form_radio form_radio-b">
-          <input v-on:click="no" id="quest6-3" type="radio" name="quest6" value="2">
-          <label for="quest6-3">Выпишу проблемы и соберу команду для креатива</label>
-        </div>
-
-        <div class="form_radio form_radio-b">
-          <input v-on:click="no" id="quest6-4" type="radio" name="quest6" value="4">
-          <label for="quest6-4">Соберу всю фактуру по проблеме и поеду на воздух, чтобы отвлечься</label>
-        </div>
-      </form>
-
-      <button class="btn btn__result">
-        Результаты
-      </button>
-
+          <div class="form_radio form_radio-b">
+            <input v-on:click="no" id="quest6-4" type="radio" name="quest6" value="4">
+            <label for="quest6-4">Соберу всю фактуру по проблеме и поеду на воздух, чтобы отвлечься</label>
+          </div>
+        </form>
+     
+      
+        <button class="btn btn__result">
+          Результаты
+        </button>
+    
     </div> <!-- /container -->
   </section> <!-- /q6 -->
 

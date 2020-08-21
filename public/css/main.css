@@ -38,6 +38,7 @@ body{
   max-width: 1170px;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 
@@ -122,16 +123,17 @@ textarea {
 
 .intro__inner{
   width: 100%;
-  height: 88%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 86%;
+  position: relative;
 }
 
 .intro__img{
   max-width: 750px;
   width: 60%;
-  align-self: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .logo{
@@ -139,9 +141,16 @@ textarea {
   padding: 2% 0 0 2%;
 }
 
+.logo img{
+  width: 100%;
+  height: auto;
+}
+
 .intro__article{
-  margin: 10% 10% 0 0;
-  max-width: 300px;
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  max-width: 340px;
 }
 
 .intro__title{
@@ -154,8 +163,7 @@ textarea {
 }
 
 .intro__title span{
-  text-transform: lowercase;
-  font-size: 72;
+  font-size: 72px;
   color: transparent;
 }
 
@@ -365,7 +373,7 @@ textarea {
 .intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail {
   position: relative;
   height: 80vh;
-  max-height: 750px;
+  min-height: 660px;
   overflow: hidden;
 }
 
@@ -519,7 +527,7 @@ textarea {
 
 .form__q6{ 
   background: url("../img/bg-img/wrapper6/form-img6.png") center no-repeat;
-  background-size: 100%;
+  background-size: contain;
   top: 5%;
 }
 
@@ -769,13 +777,6 @@ textarea {
 
 
 
-/*----------------- media 1230px--------------*/
-
-
-@media (max-width: 1230px){
-
-}
-
 /*----------------- media 1030px--------------*/
 
 @media (max-width: 1030px){
@@ -784,13 +785,23 @@ textarea {
 
   .intro, .q1, .q2, .q3, .q4, .q5, .q6{
     height: 55vh;
-    min-height: 750px;
+    min-height: 680px;
   }
   
   /*---------------- wrapper ------------*/
 
-  .wrapper{
+  .form__q3{
     width: 80%;
+    height: 25vh;
+  }
+
+  .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6{
+    width: 70%;
+    font-size: 24px;
+  }
+
+  .form__text6{
+    margin-left: 25%;
   }
 
 }
@@ -806,14 +817,18 @@ textarea {
     min-height: 600px;
   }
 
+  .intro__article{
+    max-width: 280px;
+  }
+
   .subtitle{
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 15px;
   }
 
   .intro__text-upper, .intro__text-lower{
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .result__inner{
@@ -822,8 +837,31 @@ textarea {
     margin-top: 80px;
   }
 
+  .wrapper__text1, .wrapper__text2, .wrapper__text3, .wrapper__text4, .wrapper__text5 {
+    font-size: 14px;
+  }
 
+  .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6{
+    font-size: 24px;
+  }
 
+  .form__text6{
+    margin-left: 18%;
+  }
+
+  .wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .form__q6{
+    width: 80%;
+  }
+
+  .form__q4, .form__q5{
+    width: 75%;
+    height: 18vh;
+  }
+
+  .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
+    width: 85%;
+  }
+ 
 }
 
 /*----------------- media 770px--------------*/
@@ -834,7 +872,7 @@ textarea {
 
   .q1, .q2, .q3, .q4, .q5, .q6{
     height: 40vh;
-    min-height: 700px;
+    min-height: 650px;
   }
   .intro{
     height: 35vh;
@@ -843,19 +881,37 @@ textarea {
 
   /*---------------- intro text --------------------*/
 
-  .intro__text{
-    max-width: 200px;
+  .intro__title span{
+    color: #fff
+  }
+
+  .intro__article{
+    position: static;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
   }
 
   .subtitle{
-    font-size: 18px;
+    font-size: 32px;
     margin-bottom: 10px;
   }
 
   .intro__text-upper, .intro__text-lower{
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-bottom: 5px;
+    font-size: 18px;
   }
+
+  .intro__btn{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .intro__img{
+    display: none;
+  }
+
 
   /*----------------- wrapper ---------------*/
 
@@ -878,6 +934,31 @@ textarea {
     display: none;
   }
 
+  .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
+    font-size: 20px;
+  }
+
+  .form__q1, .form__q2, .form__q3{
+    height: 20vh;
+  }
+
+  .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
+    font-size: 14px;
+  }
+
+  .quest1, .quest3, .quest5, .quest6 {
+    bottom: 20%;
+  }
+
+  .wrapper__text2{
+    font-size: 12px;
+  }
+
+  .mail__wrapper{
+    margin-top: 15%;
+  }
+
+
 }
 
 /*----------------- media 545px--------------*/
@@ -885,19 +966,16 @@ textarea {
 @media (max-width: 545px){
   /*---------------- section ------------------*/
 
-  .intro, .q1, .q2, .q3, .q4, .q5, .q6{
-    height: 40vh;
-    min-height: 460px;
-  }
-  
-  .intro{
-    height: 30vh;
-    min-height: 350px;
+  .intro, .q1, .q2, .q3, .q4, .q5, .q6, .intro{
+    height: 45vh;
+    min-height: 450px;
   }
 
   .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
-    margin-left: 5%;
+    margin-left: -5%;
+    bottom: 12%;
     font-size: 12px;
+    width: 95%;
   }
 
   .quest5{
@@ -907,14 +985,16 @@ textarea {
   /*--------------- intro text ---------------*/
 
   .intro__title{
-    font-size: 28px;
+    margin-top: 5%;
+    font-size: 48px;
+  }
+  
+  .intro__title span {
+    font-size: 48px;
   }
 
   .intro__article{
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    max-width: 1200px;
+    
   }
 
   /*--------------- wrapper ------------------*/
@@ -955,6 +1035,58 @@ textarea {
 
   .result__text.lower, .result__footer{
     font-size: 16px;
+  }
+
+  .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
+    font-size: 12px;
+  }
+
+  .wrapper__text1, .wrapper__text2, .wrapper__text3, .wrapper__text4, .wrapper__text5{
+    font-size: 10px;
+  }
+
+  .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6{
+    width: 80%;
+  }
+
+  .wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5{
+    width: 90%;
+    margin-left: 5%;
+    bottom: 0;
+  }
+
+  .form__q1{
+    top: 5%;
+  }
+
+  .form__q1, .form__q2, .form__q3{
+    height: 15vh;
+  }
+
+  .form__q4{
+    top: -10%;
+  }
+
+  .form__q6{
+    width: 90%;;
+  }
+
+  .form__text6{
+    margin-left: 23%;
+  }
+
+  .btn{
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .logo{
+    width: 15%;
+  }
+
+  .mail__wrapper{
+    margin-top: 25%;
   }
 
 }
