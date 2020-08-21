@@ -35,8 +35,7 @@ body{
 }
 
 .container{
-  max-width: 1280px;
-  width: 100%;
+  max-width: 1170px;
   height: 100%;
   margin: 0 auto;
 }
@@ -363,15 +362,17 @@ textarea {
 
 /*----------------- section -----------------*/
 
-.intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail, .result1, .result2, .result3 {
+.intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail {
   position: relative;
-  height: 20vh;
-  min-height: 700px;
+  height: 80vh;
+  max-height: 750px;
   overflow: hidden;
 }
 
-.mail, .result1, .result2, .result3{
-  height: 90vh;
+.result1, .result2, .result3{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .q1{
@@ -429,7 +430,7 @@ textarea {
 .wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5 {
   width: 65%;
   position: relative;
-  margin-left: 10%;
+  margin-left: 15%;
   height: 30%;
   bottom: 5%;
 }
@@ -483,7 +484,7 @@ textarea {
   width: 65%;
   height: 25vh;
   position: relative;
-  left: 2%;
+  left: 5%;
 }
 
 .form__q1{ 
@@ -528,7 +529,7 @@ textarea {
   position: absolute;
   color: #fff;
   z-index: 1;
-  margin-left: 18%;
+  margin-left: 17%;
 }
 
 .form__text1{
@@ -549,6 +550,7 @@ textarea {
 .form__text4{
   top: 53%;
   transform: translateY(-50%);
+  margin-left: 20%;
 }
 
 .form__text5{
@@ -559,6 +561,7 @@ textarea {
 .form__text6{
   top: 50%;
   transform: translateY(-50%);
+  margin-left: 23%;
 }
 
 /*--------------- question ------------------*/
