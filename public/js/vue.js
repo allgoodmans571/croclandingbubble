@@ -138,10 +138,10 @@ app7 = new Vue({
 
             if (results > 4) {
                 result1.visible = true
-                
-                result2.visible = false 
+
+                result2.visible = false
                 result3.visible = false
-            
+
             } else if (results > 2){
                 result2.visible = true
 
@@ -154,10 +154,10 @@ app7 = new Vue({
                 result1.visible = false
                 result2.visible = false
             }
-            
+
             setTimeout(function scrollToResult() {
                 window.scrollTo(0, document.body.scrollHeight)
-            }, 1)  
+            }, 1)
         },
 
     },
@@ -167,23 +167,23 @@ app7 = new Vue({
 
 
 
-//
-// async function sendData() {
-//   let Points = document.getElementById(app7.results);
-//   let Mail = document.getElementById('mail');
-//
-//   let data = {
-//     Points: Points,
-//     Mail: Mail.value
-//   };
-//
-//   console.log(data);
-//
-//   let response = await fetch('localhost:80/getData', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json;charset=utf-8'
-//     },
-//     body: JSON.stringify(data)
-//   });
-// };
+
+async function sendData() {
+  let Points = document.getElementById(app7.results);
+  let Mail = document.getElementById('mail');
+
+  let data = {
+    Points: Points,
+    Mail: Mail.value
+  };
+
+  console.log(data);
+
+  let response = await fetch('localhost:80/getData', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(data)
+  });
+};
