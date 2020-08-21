@@ -527,7 +527,7 @@ textarea {
 
 .form__q6{ 
   background: url("../img/bg-img/wrapper6/form-img6.png") center no-repeat;
-  background-size: contain;
+  background-size: 100%;
   top: 5%;
 }
 
@@ -991,10 +991,6 @@ textarea {
   
   .intro__title span {
     font-size: 48px;
-  }
-
-  .intro__article{
-    
   }
 
   /*--------------- wrapper ------------------*/
