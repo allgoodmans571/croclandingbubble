@@ -31,8 +31,6 @@
         Ид<span>e</span>и Крок
       </div>
 
-      <img class="intro__img" src="../public/img/bg-img/fish.png" alt="">
-
       <!-- bubbles -->
 
       <object type="image/svg+xml" data="../public/img/animation/e.svg" class="e e1">
@@ -71,27 +69,31 @@
       <object type="image/svg+xml" data="../public/img/animation/e.svg" class="e e12">
       </object>
 
-      <div class="intro__article">
-        <div class="subtitle">Привет!</div>
+      <div class="intro__inner">
+        <img class="intro__img" src="../public/img/bg-img/fish.png" alt="">
 
-        <div class="intro__text-upper">
-              В КРОК давно принято генерить идеи
-              и предлагать новые подходы.
-        </div>
+        <div class="intro__article">
+          <div class="subtitle">Привет!</div>
 
-        <div class="intro__text-lower">
-              Пройди тест и узнай справился бы
-              ты с вызовами, которые решили
-              твои коллеги.
-        </div>
+          <div class="intro__text-upper">
+                В КРОК давно принято генерить идеи
+                и предлагать новые подходы.
+          </div>
 
-        <div class="intro__btn">
-          <a href="#">Пройти тест!</a>
+          <div class="intro__text-lower">
+                Пройди тест и узнай справился бы
+                ты с вызовами, которые решили
+                твои коллеги.
+          </div>
+
+          <div class="intro__btn">
+            <a href="#">Пройти тест!</a>
+          </div>
         </div>
       </div>
-
-    </div>
-  </section>
+    
+    </div> <!-- container -->
+  </section> <!-- intro -->
 
   <section class="q1">
     <div class="container">
@@ -304,11 +306,10 @@
 
   </section> <!-- mail -->
 
-  <section v-if="visible" class="result1" id="result1" ref="component">
+  <section v-if="visible" class="result1" id="result1">
     <div class="container">
 
       <div class="result__inner">
-
         <div class="result__counter">
           5,6 из 6
         </div>
@@ -395,7 +396,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="../public/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../public/js/plugins.js"></script>
   <script src="../public/js/jquery.js"></script>
