@@ -3,25 +3,6 @@ const app = express();
 const bodyParser = require('body-parser');
 
 
-function dbOpen() {
-  db = new sqlite3.Database(':memory:', (err) => {
-    if (err) {
-      return console.error(err.message);
-    }
-    console.log('Connected to the in-memory SQlite database.');
-  });
-  return db;
-}
-
-function dbClosing() {
-  db.close((err) => {
-    if (err) {
-      return console.error(err.message);
-    }
-    console.log('Close the database connection.');
-  });
-}
-
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
