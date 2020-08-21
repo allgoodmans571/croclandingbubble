@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: Crock; /* Гарнитура шрифта */
-  src: url("../fonts/crock1.otf"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/Croc-Bold.otf"); /* Путь к файлу со шрифтом */
  }
 
 body{
@@ -136,6 +136,7 @@ textarea {
 }
 
 .logo{
+  width: 10%;
   padding: 2% 0 0 2%;
 }
 
@@ -196,7 +197,7 @@ textarea {
 
 /*------------ bubbles -------------*/
 
-.e{
+.e {
   width: 3%;
   position: absolute;
   left: 44%;
@@ -271,11 +272,11 @@ textarea {
   }
 
   40% {
-      transform: translate(-35px, -100px) scale(1) rotate(120deg);
+      transform: translate(-50px, -100px) scale(1) rotate(120deg);
   }
 
   80% {
-      transform: translate(-20px, -350px) scale(1.25) rotate(360deg); 
+      transform: translate(-30px, -310px) scale(1.25) rotate(360deg); 
   }
 
   100%{
@@ -364,13 +365,13 @@ textarea {
 
 .intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail, .result1, .result2, .result3 {
   position: relative;
-  height: 90vh;
-  min-height: 800px;
+  height: 20vh;
+  min-height: 700px;
   overflow: hidden;
 }
 
 .mail, .result1, .result2, .result3{
-  height: 75vh;
+  height: 90vh;
 }
 
 .q1{
@@ -425,16 +426,147 @@ textarea {
 
 /*-------------------- wrapper --------------*/
 
-.wrapper{
-  margin-top: 2%;
-  margin-left: 3%;
+.wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5 {
+  width: 65%;
+  position: relative;
+  margin-left: 10%;
+  height: 30%;
+  bottom: 5%;
+}
+
+
+.wrapper1{
+  width: 60%;
+  background: url("../img/bg-img/wrapper1/wrapper-img1.png") center no-repeat;
+  background-size: 100%;
+  height: 20%;
+}
+
+
+.wrapper2{
+  background: url("../img/bg-img/wrapper2/wrapper-img2.png") center no-repeat;
+  background-size: 100%;
+  height: 25%;
+  top: -5%;
+}
+
+.wrapper3{
+  background: url("../img/bg-img/wrapper3/wrapper-img3.png") center no-repeat;
+  background-size: 100%;
+}
+
+.wrapper4{
+  background: url("../img/bg-img/wrapper4/wrapper-img4.png") center no-repeat;
+  background-size: 100%;
+}
+
+.wrapper5{
+  background: url("../img/bg-img/wrapper5/wrapper-img5.png") center no-repeat;
+  background-size: 100%;
+}
+
+.wrapper__text1, .wrapper__text2, .wrapper__text3, .wrapper__text4, .wrapper__text5{
+  font-size: 18px;
+  position: absolute;
+  left: 5%;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #fff;
+}
+
+.wrapper__text2{
+  color: #000
+}
+
+.form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6 {
+  width: 65%;
+  height: 25vh;
+  position: relative;
+  left: 2%;
+}
+
+.form__q1{ 
+  background: url("../img/bg-img/wrapper1/form-img1.png") center no-repeat;
+  background-size: 100% 120%;
+  height: 30vh;
+  bottom: 5%;
+}
+
+.form__q2{ 
+  background: url("../img/bg-img/wrapper2/form-img2.png") center no-repeat;
+  background-size: 100% 120%;
+  top: -2%;
+}
+
+.form__q3{ 
+  background: url("../img/bg-img/wrapper3/form-img3.png") center no-repeat;
+  background-size: 100% 120%;
+  height: 30vh;
+}
+
+.form__q4{ 
+  background: url("../img/bg-img/wrapper4/form-img4.png") center no-repeat;
+  background-size: 100%;
+  top: -5%;
+}
+
+.form__q5{ 
+  background: url("../img/bg-img/wrapper5/form-img5.png") center no-repeat;
+  background-size: 100%;
+}
+
+.form__q6{ 
+  background: url("../img/bg-img/wrapper6/form-img6.png") center no-repeat;
+  background-size: 100%;
+  top: 5%;
+}
+
+.form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
+  width: 80%;
+  font-size: 32px;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  margin-left: 18%;
+}
+
+.form__text1{
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.form__text2{
+  top: 48%;
+  transform: translateY(-50%);
+}
+
+.form__text3{
+  top: 48%;
+  transform: translateY(-50%);
+}
+
+.form__text4{
+  top: 53%;
+  transform: translateY(-50%);
+}
+
+.form__text5{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__text6{
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*--------------- question ------------------*/
 
 .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
-  margin-left: 10%;
-  
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
   width: 60%;
   z-index: 1;
   font-size: 18px;
@@ -442,8 +574,8 @@ textarea {
   color: #fff
 }
 
-.quest3, .quest4{
-  margin-top: 10%;
+.quest6{
+  bottom: 15%;
 }
 
 /*----------------- form -----------------------*/
@@ -513,6 +645,18 @@ textarea {
   margin: 0 auto;
 }
 
+.mail__img{
+  position: relative;
+}
+
+.mail__text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
 
 .mail__wrapper {
   margin-top: 5%;

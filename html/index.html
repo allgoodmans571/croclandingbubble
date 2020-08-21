@@ -26,7 +26,6 @@
   <section class="intro">
     <div class="container">
 
-
       <div class="intro__title">
         Ид<span>e</span>и Крок
       </div>
@@ -98,29 +97,46 @@
   <section class="q1">
     <div class="container">
 
-      <img class="wrapper" src="../public/img/bg-img/wrapper1.png" alt="">
-
-      <form class="quest1" id="form_radio1">
-        <div class="form_radio form_radio-r">
-          <input v-on:click="no" id="quest1-1" type="radio" name="quest1" value="1">
-          <label for="quest1-1">Заменить платы на китайскую альтернативу</label>
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
+     
+      <div class="wrapper1">
+        <div class="wrapper__text1">
+          Во время обсуживания серверов одного клиента  произошла
+          ошибка, которая массово выводила из строя материнские платы (около 100 плат)
         </div>
-
-        <div class="form_radio form_radio-r">
-          <input v-on:click="yes" id="quest1-2" type="radio" name="quest1" value="2">
-          <label for="quest1-2">Перепаять микросхемы</label>
+      </div>
+        
+        <div class="form__q1">
+          <div class="form__text1">
+            Какую идею предложили коллеги, 
+            чтобы сохранить годовую прибыль
+            проекта?
+          </div>
         </div>
+        
+        <form class="quest1" id="form_radio1">
+          <div class="form_radio form_radio-r">
+            <input v-on:click="no" id="quest1-1" type="radio" name="quest1" value="1">
+            <label for="quest1-1">Заменить платы на китайскую альтернативу</label>
+          </div>
 
-        <div class="form_radio form_radio-r">
-          <input v-on:click="no" id="quest1-3" type="radio" name="quest1" value="3">
-          <label for="quest1-3">Доказать, что проблема не на нашей стороне</label>
-        </div>
+          <div class="form_radio form_radio-r">
+            <input v-on:click="yes" id="quest1-2" type="radio" name="quest1" value="2">
+            <label for="quest1-2">Перепаять микросхемы</label>
+          </div>
 
-        <div class="form_radio form_radio-r">
-          <input v-on:click="no" id="quest1-4" type="radio" name="quest1" value="4">
-          <label for="quest1-4">Вызвать Гаечку, чтобы она все пофиксила</label>
-        </div>
-      </form>
+          <div class="form_radio form_radio-r">
+            <input v-on:click="no" id="quest1-3" type="radio" name="quest1" value="3">
+            <label for="quest1-3">Доказать, что проблема не на нашей стороне</label>
+          </div>
+
+          <div class="form_radio form_radio-r">
+            <input v-on:click="no" id="quest1-4" type="radio" name="quest1" value="4">
+            <label for="quest1-4">Вызвать Гаечку, чтобы она все пофиксила</label>
+          </div>
+        </form>
 
     </div> <!-- /container -->
   </section> <!-- /q1 -->
@@ -132,38 +148,60 @@
         <a href="#"><img src="../public/img/logo.png" alt=""></a>
       </div>
 
-      <img class="wrapper" src="../public/img/bg-img/wrapper2.png" alt="">
-
-      <form class="quest2" id="form_radio2">
-        <div class="form_radio form_radio-g">
-          <input v-on:click="yes" id="quest2-1" type="radio" name="quest2" value="1">
-          <label for="quest2-1">Внедрение беспроводных датчиков для создания карты
-          температуры и настройки системы кондиционирования</label>
+      <div class="wrapper2">
+        <div class="wrapper__text2">
+          В районе наиболее нагруженных стоек заказчиков в машинных залах
+          ЦОД Компрессор образовывались точки с повышенной температурой. 
+          Чтобы этого не допускать система кондиционирования работала практически
+          на полную мощность, и как следствие тратилось много электроэнергии. 
         </div>
+      </div>
 
-        <div class="form_radio form_radio-g">
-          <input v-on:click="no" id="quest2-2" type="radio" name="quest2" value="2">
-          <label for="quest2-2">Создание умной системы кондиционирования</label>
-        </div>
+          <div class="form__q2">
+            <div class="form__text2">
+              Какое решение от коллеги помогает экономить 5 млн в год и сегодня трансформировалось во внешний проект?
+            </div>
+          </div>
+          
+          <form class="quest2" id="form_radio2">
+          <div class="form_radio form_radio-g">
+            <input v-on:click="yes" id="quest2-1" type="radio" name="quest2" value="1">
+            <label for="quest2-1">Внедрение беспроводных датчиков для создания карты
+            температуры и настройки системы кондиционирования</label>
+          </div>
 
-        <div class="form_radio form_radio-g">
-          <input v-on:click="no" id="quest2-3" type="radio" name="quest2" value="3">
-          <label for="quest2-3">Прием нового сотрудника, который отслеживает перегревы</label>
-        </div>
+          <div class="form_radio form_radio-g">
+            <input v-on:click="no" id="quest2-2" type="radio" name="quest2" value="2">
+            <label for="quest2-2">Создание умной системы кондиционирования</label>
+          </div>
 
-        <div class="form_radio form_radio-g">
-          <input v-on:click="no" id="quest2-4" type="radio" name="quest2" value="4">
-          <label for="quest2-4">Слишком сложно, до свидания</label>
-        </div>
-      </form>
+          <div class="form_radio form_radio-g">
+            <input v-on:click="no" id="quest2-3" type="radio" name="quest2" value="3">
+            <label for="quest2-3">Прием нового сотрудника, который отслеживает перегревы</label>
+          </div>
 
+          <div class="form_radio form_radio-g">
+            <input v-on:click="no" id="quest2-4" type="radio" name="quest2" value="4">
+            <label for="quest2-4">Слишком сложно, до свидания</label>
+          </div>
+        </form>
+      </div>
+    
     </div> <!-- /container -->
   </section> <!-- /q2 -->
 
   <section class="q3">
     <div class="container">
 
-      <img class="wrapper"src="../public/img/bg-img/wrapper3.png" alt="">
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
+
+      <div class="form__q3">
+        <div class="form__text3">
+          Какое решение от коллеги помогаетэкономить 5 млн в год и сегодня трансформировалось во внешний проект?
+        </div>
+      </div>
 
       <form class="quest3" id="form_radio3">
         <div class="form_radio form_radio-b">
@@ -193,13 +231,27 @@
   <section class="q4">
     <div class="container">
 
+
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
       <!-- papper -->
 
       <object type="image/svg+xml" data="../public/img/animation/papper.svg" class="papper">
       </object>
 
-      <img class="wrapper"src="../public/img/bg-img/wrapper4.png" alt="">
-
+      <div class="wrapper4">
+        <div class="wrapper__text4">
+          Через администраторов проекта каждый месяц проходило до 800 типовых вендорских договоров. На их согласование уходило много времени и ресурсов. 
+        </div>
+      </div>
+      
+      <div class="form__q4">     
+        <div class="form__text4">
+          Что сделали коллеги для сокращения временных затрат?
+        </div>
+      </div>
+      
       <form class="quest4" id="form_radio4">
         <div class="form_radio form_radio-r">
           <input v-on:click="no" id="quest4-1" type="radio" name="quest4" value="1">
@@ -228,7 +280,22 @@
   <section class="q5" id="form_radio5">
     <div class="container">
 
-      <img class="wrapper"src="../public/img/bg-img/wrapper5.png" alt="">
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
+
+      <div class="wrapper1">
+        <div class="wrapper__text1">
+          На одного администратора сервисных проектов ДВС приходится около 100-150 клиентов, на каждого уходит много времени, чтобы запросить акт.
+        </div>
+      </div>
+      
+      <div class="form__q5">     
+        <div class="form__text5">
+          Какая идея от коллеги решила проблему?
+        </div>
+      </div>
+
 
       <form class="quest5" id="form_radio5">
         <div class="form_radio form_radio-o">
@@ -258,7 +325,15 @@
   <section class="q6">
     <div class="container">
 
-      <img class="wrapper" src="../public/img/bg-img/wrapper6.png" alt="">
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
+
+      <div class="form__q6">       
+        <div class="form__text6">
+          А теперь представим, что тебе нужны свежие идеи для оптимизации своей работы, что ты  будешь делать?
+        </div>
+      </div>
 
       <form class="quest6" id="form_radio6">
         <div class="form_radio form_radio-b">
@@ -292,9 +367,17 @@
 
   <section class="mail">
 
-      <div class="mail__inner">
-        <img class="mail-q" src="../public/img/bg-img/wrapper-mail.png" alt="">
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
 
+      <div class="mail__inner">
+        <div class="mail__img">
+          <img src="../public/img/bg-img/wrapper-mail/mail.png" alt="">
+          <div class="mail__text">
+            Оставь свою почту, чтобы получить бобры.
+          </div>
+        </div>
         <form class='mail__wrapper' action="/" method="POST">
           <input class="mail__input" type="mail" name="mail" id="mail" placeholder="Ваш email...">
         </form>
@@ -308,6 +391,10 @@
 
   <section v-if="visible" class="result1" id="result1">
     <div class="container">
+
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
 
       <div class="result__inner">
         <div class="result__counter">
@@ -336,6 +423,10 @@
 
   <section v-if="visible" class="result2" id="result2">
     <div class="container">
+
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
 
       <div class="result__inner">
 
@@ -366,6 +457,10 @@
 
   <section v-if="visible" class="result3" id="result3">
     <div class="container">
+
+      <div class="logo">
+        <img src="../public/img/logo.png" alt="">
+      </div>
 
       <div class="result__inner">
 
