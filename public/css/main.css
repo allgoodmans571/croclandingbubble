@@ -137,12 +137,12 @@ textarea {
 }
 
 .logo{
-  width: 10%;
+  width: 7%;
   padding: 2% 0 0 2%;
 }
 
 .logo img{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
