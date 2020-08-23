@@ -209,6 +209,7 @@ textarea {
   position: absolute;
   left: 44%;
   top: 48%;
+  z-index: 1000;
   animation: bubblesMain 8s infinite linear;
 }
 
@@ -353,17 +354,85 @@ textarea {
     }
 
     30% {
-      transform: translate(-150px, 400px) rotate(360deg)scale(1.1);
+      transform: translate(-150px, 300px) rotate(360deg)scale(1.1);
     }
 
     60% {
-      transform: translate(-250px, 520px) rotate(540deg) scale(1.1);
+      transform: translate(-250px, 420px) rotate(540deg) scale(1.1);
     }
 
     100% {
-      transform: translate(-122px, 700px) rotate(720deg) scale(1.1);
+      transform: translate(-90px, 600px) rotate(720deg) scale(1.1);
     }
 
+
+}
+
+/*----------------- beaver animation -------------------*/
+
+.beaver{
+  position: absolute;
+  top: -20%;
+  animation: beaver 7s infinite linear;
+}
+
+.beaver.b1{
+  left: 0;
+
+}
+
+.beaver.b2{
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.beaver.b3{
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.beaver.b4{
+  left: 35%;
+  animation-delay: 3s;
+}
+
+.beaver.b5{
+  left: 55%;
+  animation-delay: 2.5s;
+}
+
+.beaver.b6{
+  left: 65%;
+  animation-delay: 1.5s;
+}
+
+.beaver.b7{
+  left: 70%;
+  animation-delay: 3.5s;
+}
+
+.beaver.b8{
+  left: 80%;
+}
+
+.beaver.b9{
+  left: 95%;
+  animation-delay: 1.5s;
+}
+
+
+@keyframes beaver{
+  0%{
+
+  }
+
+  50%{
+    transform: translateY(700px) rotate(720deg)
+  }
+
+  100%{
+    transform: translateY(1600px) rotate(-720deg)
+  }
 
 }
 
@@ -487,6 +556,8 @@ textarea {
 .wrapper__text2{
   color: #000
 }
+
+/* -------------------- form ---------------------- */
 
 .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6 {
   width: 65%;

@@ -1,4 +1,3 @@
-
 // counter results
 
 app1 = new Vue({
