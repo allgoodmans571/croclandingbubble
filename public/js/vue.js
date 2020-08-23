@@ -168,7 +168,7 @@ app7 = new Vue({
 
 
 async function sendData() {
-  let Points = document.getElementById(app7.results);
+  let Points = results
   let Mail = document.getElementById('mail');
 
   let data = {
@@ -178,7 +178,7 @@ async function sendData() {
 
   console.log(data);
 
-  let response = await fetch('localhost:80/getData', {
+  let response = await fetch('http://localhost:80/getData', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'

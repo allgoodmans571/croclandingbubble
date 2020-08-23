@@ -27,4 +27,4 @@ app.get('/', function(req, res) {
 });
 
 console.log("Сервер запущен...")
-app.listen(8080);
+app.listen(80);
