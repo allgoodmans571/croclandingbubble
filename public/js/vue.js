@@ -101,6 +101,13 @@ app6 = new Vue({
     },
 });
 
+result0 = new Vue({
+    el: "#result0",
+    data: {
+        visible: false
+    }
+})
+
 result1 = new Vue({
     el: "#result1",
     data: {
@@ -122,11 +129,31 @@ result3 = new Vue({
     }
 })
 
+result4 = new Vue({
+    el: "#result4",
+    data: {
+        visible: false
+    }
+})
 
-var results = 0
+result5 = new Vue({
+    el: "#result5",
+    data: {
+        visible: false
+    }
+})
 
-app7 = new Vue({
-    el: "#btn",
+result6 = new Vue({
+    el: "#result6",
+    data: {
+        visible: false
+    }
+})
+
+var results
+
+result = new Vue({
+    el: "#btn__result",
     data: {
 
     },
@@ -135,54 +162,76 @@ app7 = new Vue({
         result(){
             results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
 
-            if (results > 4) {
-                result1.visible = true
+            result0.visible = false
+            result1.visible = false
+            result2.visible = false
+            result3.visible = false
+            result4.visible = false
+            result5.visible = false
+            result6.visible = false
+            
+            if (results == 6) {
+                result6.visible = true
+            
+            } else if (results == 5){
+                result5.visible = true
 
-                result2.visible = false
-                result3.visible = false
-
-            } else if (results > 2){
-                result2.visible = true
-
-                result1.visible = false
-                result3.visible = false
-
-            } else {
+            } else if (results == 4) {
+                result4.visible = true
+            
+            } else if (results == 3) {
                 result3.visible = true
-
-                result1.visible = false
-                result2.visible = false
+            
+            } else if (results == 2) {
+                result2.visible = true
+            
+            } else if (results == 1) {
+                result1.visible = true
+            
+            } else if (results == 0) {
+                result0.visible = true
             }
 
-            setTimeout(function scrollToResult() {
-                window.scrollTo(0, document.body.scrollHeight)
-            }, 1)
         },
 
     },
 
 });
 
+dataSend = new Vue({
+    el: "#btn__send",
+    data: {
 
-
-
-
-async function sendData() {
-  let Points = results
-  let Mail = document.getElementById('mail');
-
-  let data = {
-    Points: Points,
-    Mail: Mail.value
-  };
-
-  console.log(data);
-
-  let response = await fetch('http://localhost:80/getData', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8'
     },
-    body: JSON.stringify(data)
-  });
-};
+    methods: {
+
+        send(){
+            async function sendData() {
+                let Points = results
+                let Mail = document.getElementById('mail');
+              
+                let data = {
+                  Points: Points,
+                  Mail: Mail.value
+                };
+              
+                console.log(data);
+              
+                let response = await fetch('http://localhost:80/getData', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                  },
+                  body: JSON.stringify(data)
+                });
+              };  
+            
+            setTimeout(function scrollToResult() {
+                window.scrollTo(0, document.body.scrollHeight)
+            }, 1)   
+        
+        },
+
+    },
+
+});
