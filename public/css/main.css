@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: Crock; /* Гарнитура шрифта */
-  src: url("../fonts/Croc-Bold.otf"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/Croc-Bold.ttf"); /* Путь к файлу со шрифтом */
  }
 
 body{
@@ -182,7 +182,7 @@ textarea {
 }
 
 .intro__btn{
-  font-size: 24px;
+  font-size: 22px;
   padding: 10px 0;
   background-color: #E0D436;
   text-align: center;
@@ -562,7 +562,7 @@ textarea {
 
 .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6 {
   width: 65%;
-  height: 25vh;
+  height: 30vh;
   position: relative;
   left: 5%;
 }
@@ -577,7 +577,7 @@ textarea {
 .form__q2{ 
   background: url("../img/bg-img/wrapper2/form-img2.png") center no-repeat;
   background-size: 100%;
-  top: -2%;
+  top: -5%;
 }
 
 .form__q3{ 
@@ -627,20 +627,20 @@ textarea {
 }
 
 .form__text4{
-  top: 53%;
+  top: 62%;
   transform: translateY(-50%);
   margin-left: 20%;
 }
 
 .form__text5{
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
 }
 
 .form__text6{
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
-  margin-left: 23%;
+  margin-left: 21%;
 }
 
 /*--------------- question ------------------*/
@@ -866,7 +866,7 @@ textarea {
   }
 
   .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6{
-    width: 70%;
+    width: 90%;
     font-size: 24px;
   }
 
@@ -1056,11 +1056,11 @@ textarea {
 
   .intro__title{
     margin-top: 5%;
-    font-size: 48px;
+    font-size: 46px;
   }
   
   .intro__title span {
-    font-size: 48px;
+    font-size: 46px;
   }
 
   /*--------------- wrapper ------------------*/
@@ -1112,7 +1112,7 @@ textarea {
   }
 
   .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6{
-    width: 80%;
+    width: 85%;
   }
 
   .wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5{
@@ -1126,15 +1126,7 @@ textarea {
   }
 
   .form__q1, .form__q2, .form__q3{
-    height: 15vh;
-  }
-
-  .form__q4{
-    top: -10%;
-  }
-
-  .form__q6{
-    width: 90%;;
+    height: 20vh;
   }
 
   .form__text6{
@@ -1153,6 +1145,11 @@ textarea {
 
   .mail__wrapper{
     margin-top: 25%;
+  }
+
+  .intro__btn{
+    font-size: 18px;
+    padding: 7px 0;
   }
 
 }
