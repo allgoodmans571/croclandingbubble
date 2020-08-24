@@ -192,9 +192,25 @@ result = new Vue({
                 result0.visible = true
             }
 
+        },
+
+    },
+
+});
+
+dataSend = new Vue({
+    el: "#btn__send",
+    data: {
+
+    },
+    methods: {
+
+        send(){
+            
             setTimeout(function scrollToResult() {
                 window.scrollTo(0, document.body.scrollHeight)
             }, 1)  
+             
         },
 
     },
