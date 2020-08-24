@@ -192,46 +192,31 @@ result = new Vue({
                 result0.visible = true
             }
 
-        },
-
-    },
-
-});
-
-dataSend = new Vue({
-    el: "#btn__send",
-    data: {
-
-    },
-    methods: {
-
-        send(){
-            async function sendData() {
-                let Points = results
-                let Mail = document.getElementById('mail');
-              
-                let data = {
-                  Points: Points,
-                  Mail: Mail.value
-                };
-              
-                console.log(data);
-              
-                let response = await fetch('http://localhost:80/getData', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                  },
-                  body: JSON.stringify(data)
-                });
-              };  
-            
             setTimeout(function scrollToResult() {
                 window.scrollTo(0, document.body.scrollHeight)
-            }, 1)   
-        
+            }, 1)  
         },
 
     },
 
 });
+
+async function sendData() {
+    let Points = results
+    let Mail = document.getElementById('mail');
+  
+    let data = {
+      Points: Points,
+      Mail: Mail.value
+    };
+  
+    console.log(data);
+  
+    let response = await fetch('http://localhost:80/getData', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(data)
+    });
+  };  
