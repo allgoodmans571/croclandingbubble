@@ -169,25 +169,25 @@ result = new Vue({
             result4.visible = false
             result5.visible = false
             result6.visible = false
-            
+
             if (results == 6) {
                 result6.visible = true
-            
+
             } else if (results == 5){
                 result5.visible = true
 
             } else if (results == 4) {
                 result4.visible = true
-            
+
             } else if (results == 3) {
                 result3.visible = true
-            
+
             } else if (results == 2) {
                 result2.visible = true
-            
+
             } else if (results == 1) {
                 result1.visible = true
-            
+
             } else if (results == 0) {
                 result0.visible = true
             }
@@ -206,11 +206,11 @@ dataSend = new Vue({
     methods: {
 
         send(){
-            
+
             setTimeout(function scrollToResult() {
                 window.scrollTo(0, document.body.scrollHeight)
-            }, 1)  
-             
+            }, 1)
+
         },
 
     },
@@ -220,19 +220,19 @@ dataSend = new Vue({
 async function sendData() {
     let Points = results
     let Mail = document.getElementById('mail');
-  
+
     let data = {
       Points: Points,
       Mail: Mail.value
     };
-  
+
     console.log(data);
-  
-    let response = await fetch('http://localhost:80/getData', {
+
+    let response = await fetch('http://80.78.240.74/getData', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       },
       body: JSON.stringify(data)
     });
-  };  
+  };
