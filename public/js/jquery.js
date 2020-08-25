@@ -7,15 +7,6 @@ $(document).ready(function() {
         }, 500)
     })
 
-    $('.btn__result').on("click", function(event){
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $(".mail").offset().top
-        }, 500)
-    })
-
-
     $("#mail__wrapper").keydown(function(event){
     if(event.keyCode == 13) {
         event.preventDefault();
