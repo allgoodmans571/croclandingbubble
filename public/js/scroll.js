@@ -43,11 +43,11 @@ function handleButtonClick5() {
 
 btn5.addEventListener('click', handleButtonClick5);
 
-// var hiddenElement6 = document.getElementById("mail");
-// var btn6 = document.querySelector('.quest6');
+var hiddenElement6 = document.getElementById("mail");
+var btn6 = document.querySelector('.quest6');
 
-// function handleButtonClick6() {
-//    hiddenElement6.scrollIntoView({behavior: "smooth"});
-// }
+function handleButtonClick6() {
+   hiddenElement6.scrollIntoView({behavior: "smooth"});
+}
 
-// btn6.addEventListener('click', handleButtonClick6);
+btn6.addEventListener('click', handleButtonClick6);
