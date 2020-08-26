@@ -152,14 +152,14 @@ result6 = new Vue({
 
 var results
 
-result = new Vue({
-    el: "#btn__result",
+dataSend = new Vue({
+    el: "#btn__send",
     data: {
 
     },
     methods: {
 
-        result(){
+        send(){
             results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
 
             result0.visible = false
@@ -192,21 +192,6 @@ result = new Vue({
                 result0.visible = true
             }
 
-        },
-
-    },
-
-});
-
-dataSend = new Vue({
-    el: "#btn__send",
-    data: {
-
-    },
-    methods: {
-
-        send(){
-            
             setTimeout(function scrollToResult() {
                 window.scrollTo(0, document.body.scrollHeight)
             }, 1)
