@@ -206,7 +206,7 @@ dataSend = new Vue({
     methods: {
 
         send(){
-
+            
             setTimeout(function scrollToResult() {
                 window.scrollTo(0, document.body.scrollHeight)
             }, 1)
