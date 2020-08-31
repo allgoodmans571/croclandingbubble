@@ -661,7 +661,7 @@ textarea {
 .form__q6{ 
   background: url("../img/bg-img/wrapper6/form-img6.png") center no-repeat;
   background-size: 100%;
-  top: 10%;
+  top: 5%;
 }
 
 .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
@@ -710,12 +710,16 @@ textarea {
 .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
   position: absolute;
   bottom: 10%;
-  left: 10%;
+  left: 7%;
   width: 60%;
   z-index: 1;
   font-size: 18px;
   font-weight: 700;
   color: #fff
+}
+
+.quest3{
+  width: 50%;
 }
 
 .quest6{
@@ -885,15 +889,15 @@ textarea {
 }
 
 .idea__crock{
-  color: inherit;
+  color: rgb(20, 51, 119);
+  border-bottom: 2px solid rgb(20, 51, 119);
   text-decoration: none;
-  border-bottom: 2px solid #fff;
   transition: all .2s linear;
 }
 
 .idea__crock.idea__crock-b:hover {
-  color: rgb(20, 51, 119);
-  border-bottom-color: rgb(20, 51, 119);
+  color: inherit;
+  border-bottom-color: #fff;
 }
 
 .idea__crock.idea__crock-o:hover{
