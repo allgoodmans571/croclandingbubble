@@ -340,15 +340,33 @@ textarea {
 
 .papper{
   position: absolute;
-  top: 20%;
-  right: -10%;
   transform: rotate(-45deg);
   animation: papper 3s infinite linear;
 }
 
+.p1{
+  animation: papper1 3s infinite linear;
+  top: 20%;
+  right: -10%;
+}
+
+.p2{
+  top: 10%;
+  right: -10%;
+  animation: papper2 5s infinite linear;
+  animation-delay: 1s;
+}
+
+.p3{
+  top: -10%;
+  right: 10%;
+  animation: papper3 3s infinite linear;
+  animation-delay: 1s;
+}
+
 /*----------------- papper animation -------------------*/
 
-@keyframes papper{
+@keyframes papper1{
     0% {
       transform: rotate(180deg);
     }
@@ -367,6 +385,49 @@ textarea {
 
 
 }
+
+@keyframes papper2{
+  0% {
+    transform: rotate(180deg);
+  }
+
+  30% {
+    transform: translate(-250px, 400px) rotate(360deg)scale(1.1);
+  }
+
+  60% {
+    transform: translate(-150px, 550px) rotate(540deg) scale(1.1);
+  }
+
+  100% {
+    transform: translate(-400px, 700px) rotate(720deg) scale(1.1);
+  }
+
+
+}
+@keyframes papper3{
+  0% {
+    transform: rotate(180deg);
+  }
+
+  30% {
+    transform: translate(-100px, 550px) rotate(360deg)scale(1.1);
+  }
+
+  60% {
+    transform: translate(50px, 620px) rotate(540deg) scale(1.1);
+  }
+
+
+  100% {
+    transform: translate(-50px, 820px) rotate(720deg) scale(1.1);
+  }
+
+
+}
+
+
+
 
 /*----------------- beaver animation -------------------*/
 
@@ -440,7 +501,6 @@ textarea {
 /*----------------- section -----------------*/
 
 .intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail {
-  position: relative;
   height: 80vh;
   min-height: 660px;
   overflow: hidden;
@@ -526,6 +586,7 @@ textarea {
   background-size: 100%;
   height: 25%;
   top: -5%;
+  width: 70%;
 }
 
 .wrapper3{
@@ -565,6 +626,7 @@ textarea {
   height: 30vh;
   position: relative;
   left: 5%;
+  min-height: 220px;
 }
 
 .form__q1{ 
@@ -604,7 +666,7 @@ textarea {
 
 .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
   width: 80%;
-  font-size: 32px;
+  font-size: 24px;
   position: absolute;
   color: #fff;
   z-index: 1;
@@ -887,6 +949,10 @@ textarea {
     min-height: 600px;
   }
 
+  .wrapper1{
+    height: 21vh;
+  }
+
   .intro__article{
     max-width: 280px;
   }
@@ -912,7 +978,7 @@ textarea {
   }
 
   .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6{
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .form__text6{
@@ -1041,6 +1107,10 @@ textarea {
     min-height: 450px;
   }
 
+  .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6{
+    min-height: 125px;
+  }
+
   .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
     margin-left: -5%;
     bottom: 12%;
@@ -1121,12 +1191,16 @@ textarea {
     bottom: 0;
   }
 
-  .form__q1{
-    top: 5%;
+  .wrapper1{
+    height: 14vh;
   }
 
   .form__q1, .form__q2, .form__q3{
     height: 20vh;
+  }
+
+  .form__q1{
+    height: 25vh;
   }
 
   .form__text6{
