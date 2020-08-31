@@ -606,7 +606,7 @@ textarea {
 }
 
 .wrapper__text1, .wrapper__text2, .wrapper__text3, .wrapper__text4, .wrapper__text5{
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   left: 5%;
   top: 55%;
@@ -629,6 +629,10 @@ textarea {
   min-height: 220px;
 }
 
+.form__q2{
+  width: 60%;
+}
+
 .form__q1{ 
   background: url("../img/bg-img/wrapper1/form-img1.png") center no-repeat;
   background-size: 100%;
@@ -639,7 +643,7 @@ textarea {
 .form__q2{ 
   background: url("../img/bg-img/wrapper2/form-img2.png") center no-repeat;
   background-size: 100%;
-  top: -8%;
+  top: -9%;
 }
 
 .form__q3{ 
