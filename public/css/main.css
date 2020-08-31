@@ -636,7 +636,7 @@ textarea {
 .form__q1{ 
   background: url("../img/bg-img/wrapper1/form-img1.png") center no-repeat;
   background-size: 100%;
-  height: 30vh;
+  height: 35vh;
   bottom: 5%;
 }
 
@@ -858,13 +858,13 @@ textarea {
 
 .result__counter{
   font-size: 48px;
-  margin-bottom: 80px;
 }
 
 .result__title{
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 700;
   margin-bottom: 70px;
+  margin: 20px 0;
 }
 
 .result__title-b{
