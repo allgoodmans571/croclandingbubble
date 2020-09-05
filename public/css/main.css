@@ -41,6 +41,17 @@ body{
   position: relative;
 }
 
+.main{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+
+.main.main3{
+  height: 95%;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -128,11 +139,10 @@ textarea {
 }
 
 .intro__img{
-  max-width: 750px;
-  width: 60%;
+  width: 750px;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -50px;
+  bottom: -40px;
   z-index: 1;
 }
 
@@ -342,6 +352,7 @@ textarea {
   position: absolute;
   transform: rotate(-45deg);
   animation: papper 3s infinite linear;
+  z-index: 1000;
 }
 
 .p1{
@@ -427,13 +438,79 @@ textarea {
 }
 
 
+.img1{
+  position: absolute;
+  right: -15%;
+  bottom: 0;
+  width: 50%;
+}
 
+.img2{
+  position: absolute;
+  right: -250px;
+  bottom: -20px;
+  width: 45%;
+
+}
+
+.img3{
+  position: absolute;
+  right: -20%;
+  bottom: -10px;
+  width: 60%;
+
+}
+
+.img4{
+  position: absolute;
+  right: -20%;
+  bottom: -20px;
+  width: 60%;
+
+}
+
+.img5{
+  position: absolute;
+  right: -20%;
+  bottom: -85px;
+  width: 50%;
+
+}
+
+.img6{
+  position: absolute;
+  right: -25%;
+  bottom: 10px;
+  width: 55%;
+
+}
+
+.result__img1{
+  position: absolute;
+  right: -15%;
+  bottom: -100px;
+  width: 60%;
+}
+
+.result__img2{
+  position: absolute;
+  right: -15%;
+  bottom: -20px;
+  width: 80%;
+}
+
+.result__img3{
+  position: absolute;
+  right: -15%;
+  bottom: -20px;
+  width: 70%;
+}
 
 /*----------------- beaver animation -------------------*/
 
 .beaver{
   position: absolute;
-  top: -20%;
+  top: -40%;
   animation: beaver 7s infinite linear;
 }
 
@@ -488,11 +565,11 @@ textarea {
   }
 
   50%{
-    transform: translateY(700px) rotate(720deg)
+    transform: translateY(600px) rotate(720deg)
   }
 
   100%{
-    transform: translateY(1600px) rotate(-720deg)
+    transform: translateY(1200px) rotate(-720deg)
   }
 
 }
@@ -500,16 +577,14 @@ textarea {
 
 /*----------------- section -----------------*/
 
-.intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail {
+.intro, .q1, .q2, .q3, .q4, .q5, .q6, .mail, .result1, .result2, .result3 {
   height: 80vh;
-  min-height: 660px;
+  min-height: 720px;
   overflow: hidden;
 }
 
 .result1, .result2, .result3{
   position: relative;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .q1{
@@ -547,18 +622,18 @@ textarea {
 
 
 .result1 {
-  background: url("../img/bg-img/result1.png") no-repeat center;
+  background: url("../img/bg-img/result.png") no-repeat center;
   background-size: cover;
 }
 
 
 .result2 {
-  background: url("../img/bg-img/result2.png") no-repeat center;
+  background: url("../img/bg-img/result.png") no-repeat center;
   background-size: cover;
 }
 
 .result3 {
-  background: url("../img/bg-img/result3.png") no-repeat center;
+  background: url("../img/bg-img/result.png") no-repeat center;
   background-size: cover;
 }
 
@@ -570,6 +645,7 @@ textarea {
   margin-left: 15%;
   height: 25%;
   bottom: 5%;
+  z-index: 1000;
 }
 
 
@@ -627,6 +703,7 @@ textarea {
   position: relative;
   left: 5%;
   min-height: 220px;
+  z-index: 1000;
 }
 
 .form__q2{
@@ -643,7 +720,7 @@ textarea {
 .form__q2{ 
   background: url("../img/bg-img/wrapper2/form-img2.png") center no-repeat;
   background-size: 100%;
-  top: -9%;
+  top: -60px;
 }
 
 .form__q3{ 
@@ -880,37 +957,40 @@ textarea {
 }
 
 .result__text{
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
 .result__text.lower{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .result__footer{
-  font-size: 28px;
+  font-size: 32px;
 }
 
 
 .idea__crock{
-  color: rgb(20, 51, 119);
-  border-bottom: 2px solid rgb(20, 51, 119);
   text-decoration: none;
   transition: all .2s linear;
 }
 
-.idea__crock.idea__crock-b:hover {
+.idea__crock:hover{
   color: inherit;
   border-bottom-color: #fff;
 }
 
-.idea__crock.idea__crock-o:hover{
+.idea__crock.idea__crock-b {
+  color: rgb(20, 51, 119);
+  border-bottom: 2px solid rgb(20, 51, 119);
+}
+
+.idea__crock.idea__crock-o{
   color: #c98031;
   border-bottom-color: #c98031;
 }
 
-.idea__crock.idea__crock-r:hover{
+.idea__crock.idea__crock-r{
   color: #a84a48;
   border-bottom-color: #a84a48;
 }
@@ -959,10 +1039,6 @@ textarea {
     min-height: 600px;
   }
 
-  .wrapper1{
-    height: 21vh;
-  }
-
   .intro__article{
     max-width: 280px;
   }
@@ -978,9 +1054,9 @@ textarea {
   }
 
   .result__inner{
-    width: 70%;
+    width: 55%;
     margin-left: 40px;
-    margin-top: 80px;
+    margin-top: 0;
   }
 
   .wrapper__text1, .wrapper__text2, .wrapper__text3, .wrapper__text4, .wrapper__text5 {
@@ -1017,12 +1093,16 @@ textarea {
   /*---------------- section --------------------*/
 
   .q1, .q2, .q3, .q4, .q5, .q6{
-    height: 40vh;
-    min-height: 650px;
+    height: 1000px;
+    min-height: 800px;
   }
   .intro{
     height: 35vh;
     min-height: 450px;
+  }
+
+  .logo{
+    display: none;
   }
 
   /*---------------- intro text --------------------*/
@@ -1035,7 +1115,6 @@ textarea {
     position: static;
     max-width: 420px;
     margin: 0 auto;
-    text-align: center;
     margin-top: 5%;
   }
 
@@ -1056,6 +1135,17 @@ textarea {
 
   .intro__img{
     display: none;
+  }
+
+  
+
+  .img1, .img2, .img3, .img4, .img5, .img6, .result__img1, .result__img2, .result__img3{
+    position: static;
+  }
+
+  .result__img1, .result__img2, .result__img3{
+    display: block;
+    margin: 0 auto;
   }
 
 
@@ -1089,6 +1179,7 @@ textarea {
   }
 
   .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
+    position: static;
     font-size: 14px;
   }
 
@@ -1104,6 +1195,64 @@ textarea {
     margin-top: 15%;
   }
 
+  .result__counter{
+    font-size: 32px;
+  }
+
+  .result__title {
+    font-size: 48px;
+    margin: 15px 0;
+  }
+
+  .result__text{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .result__footer{
+    font-size: 18px;
+  }
+
+  .main{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img1{
+    position: static;
+  }
+
+  .quest1{
+    position: static;
+  }
+
+.form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6 {
+  width: 90%;
+  left: 0;
+  top: 20px;
+}
+
+.img1{
+  width: 60%;
+}
+
+.quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
+  width: 70%;
+  margin-top: 20px;
+}
+
+.wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5 {
+  width: 95%;
+  margin-left: 4%;
+  bottom: 0;
+}
+
+  .result__inner{
+    width: 80%;
+  }
 
 }
 
@@ -1112,9 +1261,13 @@ textarea {
 @media (max-width: 545px){
   /*---------------- section ------------------*/
 
-  .intro, .q1, .q2, .q3, .q4, .q5, .q6, .intro{
-    height: 45vh;
-    min-height: 450px;
+  .intro, .q1, .q2, .q3, .q4, .q5, .q6{
+    height: 800px;
+    min-height: 700px;
+  }
+
+  .main{
+   height: 75%;
   }
 
   .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6{
@@ -1122,10 +1275,10 @@ textarea {
   }
 
   .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
-    margin-left: -5%;
+    margin-left: 0;
     bottom: 12%;
     font-size: 12px;
-    width: 95%;
+    width: 90%;
   }
 
   .quest5{
@@ -1167,8 +1320,7 @@ textarea {
     width: 95%;
     margin-left: 0;
     margin: 0 auto;
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 75px;
   }
 
   .result__title{
@@ -1184,7 +1336,7 @@ textarea {
   }
 
   .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .wrapper__text1, .wrapper__text2, .wrapper__text3, .wrapper__text4, .wrapper__text5{
@@ -1192,17 +1344,13 @@ textarea {
   }
 
   .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6{
-    width: 85%;
+    width: 100%;
   }
 
   .wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5{
-    width: 90%;
-    margin-left: 5%;
+    width: 96%;
+    margin-left: 2%;
     bottom: 0;
-  }
-
-  .wrapper1{
-    height: 14vh;
   }
 
   .form__q1, .form__q2, .form__q3{
@@ -1210,7 +1358,7 @@ textarea {
   }
 
   .form__q1{
-    height: 25vh;
+    height: 20vh;
   }
 
   .form__text6{
@@ -1250,9 +1398,19 @@ textarea {
 }
 
 @media (max-width: 400px) {
-  .form__q4{
-    top: -8%;
+
+  .main{
+   height: 70%;
   }
+  .main.main2{
+    height: 60%;
+  }
+
+  .q1, .q2, .q3, .q4, .q5, .q6{
+    min-height: 500px;
+    height: 620px;
+  }
+
 }
 
 /* ==========================================================================
