@@ -139,7 +139,8 @@ textarea {
 }
 
 .intro__img{
-  width: 750px;
+  width: 70%;
+  max-width: 750px;
   position: absolute;
   left: -50px;
   bottom: -40px;
@@ -161,6 +162,7 @@ textarea {
   bottom: 20%;
   right: 5%;
   max-width: 340px;
+  z-index: 1000;
 }
 
 .intro__title{
@@ -215,7 +217,7 @@ textarea {
 /*------------ bubbles -------------*/
 
 .e {
-  width: 3%;
+  width: 40px;
   position: absolute;
   left: 44%;
   top: 48%;
@@ -286,15 +288,15 @@ textarea {
   }
   
   20% {
-      transform: translate(-100px, -80px) scale(0.75) rotate(60deg);
+      transform: translate(-280%, -230%) scale(0.75) rotate(60deg);
   }
 
   40% {
-      transform: translate(-50px, -100px) scale(1) rotate(120deg);
+      transform: translate(-120%, -320%) scale(1) rotate(120deg);
   }
 
   80% {
-      transform: translate(-30px, -310px) scale(1.25) rotate(360deg); 
+      transform: translate(-100%, -770%) scale(1.25) rotate(360deg); 
   }
 
   100%{
@@ -691,6 +693,10 @@ textarea {
   color: #fff;
 }
 
+.wrapper__text2, .wrapper__text4{
+  width: 90%;
+}
+
 .wrapper__text2{
   color: #000
 }
@@ -1034,6 +1040,30 @@ textarea {
 
   /*--------------- intro ---------------*/
 
+
+  @keyframes bubblesMain{
+    
+    0% {
+        transform: scale(0.5) rotate(135deg);
+    }
+    
+    20% {
+        transform: translate(-280%, -230%) scale(0.75) rotate(60deg);
+    }
+  
+    40% {
+        transform: translate(-180%, -320%) scale(1) rotate(120deg);
+    }
+  
+    80% {
+        transform: translate(-160%, -670%) scale(1.25) rotate(360deg); 
+    }
+  
+    100%{
+        transform:  translate(-320px, -480px) scale(3);
+    }
+  }
+
   .intro{
     height: 45vh;
     min-height: 600px;
@@ -1084,6 +1114,23 @@ textarea {
     width: 85%;
   }
  
+  .intro__article{
+    bottom: 15%;
+  }
+
+  .subtitle{
+    font-size: 24px;
+  }
+
+  .intro__text-upper, .intro__text-lower{
+    font-size: 16px;
+  }
+
+  .intro__btn{
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
 }
 
 /*----------------- media 770px--------------*/
@@ -1092,52 +1139,56 @@ textarea {
 
   /*---------------- section --------------------*/
 
-  .q1, .q2, .q3, .q4, .q5, .q6{
-    height: 1000px;
-    min-height: 800px;
+  .intro, .q1, .q2, .q3, .q4, .q5, .q6{
+    min-height: 1100px;
   }
+ 
   .intro{
-    height: 35vh;
-    min-height: 450px;
+    min-height: 1000px;
   }
 
   .logo{
     display: none;
   }
 
-  /*---------------- intro text --------------------*/
-
-  .intro__title span{
-    color: #fff
+  .intro__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
   }
+
+  .intro__img{
+    position: static;
+    align-self: flex-start;
+    margin-left: -60px;
+  }
+
+  /*---------------- intro text --------------------*/
 
   .intro__article{
     position: static;
     max-width: 420px;
-    margin: 0 auto;
     margin-top: 5%;
+    text-align: center;
   }
 
   .subtitle{
-    font-size: 32px;
+    font-size: 48px;
     margin-bottom: 10px;
   }
 
   .intro__text-upper, .intro__text-lower{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
 
   .intro__btn{
     width: 50%;
     margin: 0 auto;
+    font-size: 24px;
+    padding: 10px 0;
   }
-
-  .intro__img{
-    display: none;
-  }
-
-  
 
   .img1, .img2, .img3, .img4, .img5, .img6, .result__img1, .result__img2, .result__img3{
     position: static;
@@ -1166,8 +1217,13 @@ textarea {
 
   /* animation */
 
-  .e, .papper{
+  .papper{
     display: none;
+  }
+
+  .e{
+    left: 44%;
+    top: 30%;
   }
 
   .form__text1, .form__text2, .form__text3, .form__text4, .form__text5, .form__text6 {
@@ -1262,16 +1318,45 @@ textarea {
   /*---------------- section ------------------*/
 
   .intro, .q1, .q2, .q3, .q4, .q5, .q6{
-    height: 800px;
-    min-height: 700px;
+
+    min-height: 750px;
   }
 
   .main{
-   height: 75%;
+   height: 65%;
+  }
+
+ .img1, .img2, .img3, .img4, .img5, .img6{
+   margin-top: 20px;
+ }
+
+  .e{
+    width: 30px;
+    left: 45%;
+    top: 29%;
+  }
+
+  .wrapper__text4{
+    top: 50%;
+  }
+
+  .subtitle{
+    font-size: 32px;
+  }
+
+  .intro__text-upper, .intro__text-lower{
+    font-size: 16px;
+  }
+
+  .intro__btn{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 5px 0;
   }
 
   .form__q1, .form__q2, .form__q3, .form__q4, .form__q5, .form__q6{
-    min-height: 125px;
+    min-height: 165px;
   }
 
   .quest1, .quest2, .quest3, .quest4, .quest5, .quest6{
@@ -1314,7 +1399,7 @@ textarea {
     left: 25%;
   }
 
-  /*-------------- result ------------99-----*/
+  /*-------------- result -------------------*/
 
   .result__inner{
     width: 95%;
@@ -1400,15 +1485,35 @@ textarea {
 @media (max-width: 400px) {
 
   .main{
-   height: 70%;
+   height: 65%;
   }
   .main.main2{
     height: 60%;
   }
 
-  .q1, .q2, .q3, .q4, .q5, .q6{
-    min-height: 500px;
-    height: 620px;
+  .intro, .q1, .q2, .q3, .q4, .q5, .q6{
+    min-height: 650px;
+  }
+
+  .q3{
+    min-height: 550px;
+  }
+
+  .q4{
+    min-height: 700px;
+  }
+
+  .main.main3{
+    height: 90%;
+  }
+
+  .img1, .img2, .img3, .img4, .img5, .img6{
+    margin-top: 10px;
+  }
+
+  .e{
+    left: 43%;
+    top: 35%;
   }
 
 }
