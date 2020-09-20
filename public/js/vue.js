@@ -213,7 +213,7 @@ async function sendData() {
 
     console.log(data);
 
-    let response = await fetch('http://80.78.240.74/getData', {
+    let response = await fetch('http://localhost:80/getData', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'

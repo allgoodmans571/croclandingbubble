@@ -1,6 +1,22 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
+const csv = require('csv-parser');
+
+
+const createCsvWriter = require('csv-writer').createObjectCsvWriter
+
+
+const csvWriter = createCsvWriter({
+  path: 'out.csv',
+  header: [
+    {id: 'name', title: 'Name'},
+    {id: 'surname', title: 'Surname'},
+  ]
+});
+
 
 
 
@@ -15,10 +31,13 @@ app.use(bodyParser.json());
 
 app.use('/public', express.static(__dirname + '/public'));
 
+const jsonParser = bodyParser.json()
 
-app.post("/getData", function (req, res) {
+app.post("/getData", jsonParser, function (req, res) {
   surveyResults = `${req.body.Points} ${req.body.Mail}`;
   console.log(surveyResults);
+  // csvWriter.writeRecords(surveyResults)
+  //   .then(() => console.log('The CSV file was written successfully'));
   res.send({ status: 'OK'});
 });
 
