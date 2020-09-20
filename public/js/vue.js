@@ -203,11 +203,11 @@ dataSend = new Vue({
 });
 
 async function sendData() {
-    results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter
-    
-    let Points = results
+    results = app1.counter + app2.counter + app3.counter + app4.counter + app5.counter + app6.counter;
+
+    let Points = results;
     let Mail = document.getElementById('mail');
-    
+
     let data = {
       Points: Points,
       Mail: Mail.value
