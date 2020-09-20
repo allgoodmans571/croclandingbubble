@@ -36,7 +36,11 @@ const jsonParser = bodyParser.json()
 app.post("/getData", jsonParser, function (req, res) {
   surveyResults = `${req.body.Points} ${req.body.Mail}`;
   console.log(surveyResults);
-  csvWriter.writeRecords({Points: req.body.Points, Mail: req.body.Mail})
+  let results;
+  results = [];
+  results.push({ points: req.body.Points, mail: req.body.Mail})
+  
+  csvWriter.writeRecords(results)
     .then(() => console.log('The CSV file was written successfully'));
   res.send({ status: 'OK'});
 });
