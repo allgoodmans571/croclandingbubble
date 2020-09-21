@@ -39,7 +39,7 @@ app.post("/getData", jsonParser, function (req, res) {
   let results;
   results = [];
   results.push({ points: req.body.Points, mail: req.body.Mail})
-  
+
   csvWriter.writeRecords(results)
     .then(() => console.log('The CSV file was written successfully'));
   res.send({ status: 'OK'});
