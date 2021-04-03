@@ -415,11 +415,14 @@
         <div class="mail__img">
           <img src="../public/img/bg-img/wrapper-mail/mail.png" alt="">
           <div class="mail__text">
-            Оставь свою почту, чтобы получить бобры.
+            Оставь свою корпоративную почту, чтобы получить бобры.
           </div>
         </div>
         <form class='mail__wrapper' action="/" method="POST" id="mail__wrapper">
-          <input class="mail__input" type="mail" name="mail" id="mail" placeholder="Ваш email...">
+          <div class="mail__group">
+            <input class="mail__input" type="text" name="email" id="email" placeholder="Ваш email...">
+            <span class="mail__span">@croc.ru</span>
+          </div>
         </form>
 
         <button v-on:click="send" class="btn btn__mail" id="btn__send" onclick="sendData()">

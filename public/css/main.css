@@ -897,15 +897,31 @@ textarea {
   margin-top: 5%;
 }
 
-.mail__input {
+.mail__group {
   border: 1px solid #fff;
-  padding: 10px 30px;
+  background-color: #DF645B;
+}
+
+.mail__input {
+  border: none;
+  padding: 10px 0 10px 30px  ;
   background-color: #DF645B;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
+  border-right: 1px solid #fff;
+}
 
+.mail__input:focus {
+  outline: none;
+}
+
+.mail__span {
+  padding: 10px 30px 10px 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .btn:hover{
