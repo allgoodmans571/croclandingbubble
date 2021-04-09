@@ -1312,8 +1312,8 @@ textarea {
       transform: translate(-120px, 1200px) rotate(720deg) scale(1.1);
     }
 
-
 }
+
 
 @keyframes papper2{
   0% {
@@ -1453,6 +1453,14 @@ textarea {
 
   .result__inner{
     width: 80%;
+  }
+
+  .mail__inner {
+    width: 100%;
+  }
+
+  .mail__input, .mail__span {
+    padding: 10px;
   }
 
 }
