@@ -1,7 +1,5 @@
 // counter results
 
-const { createConnection } = require("mysql");
-
 app1 = new Vue({
   el: "#form_radio1",
 

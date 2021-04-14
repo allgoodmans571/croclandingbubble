@@ -913,6 +913,10 @@ textarea {
   border-right: 1px solid #fff;
 }
 
+.mail__input::placeholder {
+  color: #fff;
+}
+
 .mail__input:focus {
   outline: none;
 }
